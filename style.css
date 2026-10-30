@@ -445,3 +445,14 @@ footer .cols{grid-template-columns:2fr 1fr}
 .pagehead .back,.article .back{display:inline-block;font-size:14px !important;font-weight:400 !important;color:var(--grey) !important;text-decoration:none;margin:-40px 0 34px !important}
 .pagehead .back:hover,.article .back:hover{color:var(--ink) !important;text-decoration:underline}
 @media (max-width:640px){.pagehead .back,.article .back{font-size:13.5px !important;margin:-20px 0 22px !important}}
+/* alternance stricte blanc / gris clair, bloc après bloc */
+.bg-w{background:#fff !important}
+.bg-g{background:var(--ivory) !important}
+.fe{padding:72px 0 !important}
+@media (max-width:640px){.fe{padding:44px 0 !important}}
+.cta{border-top:none !important}
+/* boutons : noirs sur fond blanc, blancs sur fond gris */
+.bg-w .btn:not(.btn-contact):not(.hero-alt){background:var(--ink) !important;color:#fff !important;border:2px solid var(--ink) !important}
+.bg-g .btn:not(.btn-contact){background:#fff !important;color:var(--ink) !important;border:2px solid var(--ink) !important}
+.bg-g .btn:not(.btn-contact):hover{background:var(--ink) !important;color:#fff !important}
+.hero .btn.btn-line-w{background:#fff !important;color:var(--ink) !important;border:2px solid var(--ink) !important}
