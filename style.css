@@ -536,3 +536,4 @@ footer .fmail{margin-top:14px}footer .fmail a{color:#C9CDD6;text-decoration:unde
 footer .fmail{display:flex;align-items:center;gap:12px}
 footer .flogo{width:36px;height:36px;display:block;flex:0 0 auto}
 @media (max-width:640px){footer .fmail{flex-direction:column;align-items:flex-start;gap:10px}footer .fmail a{white-space:nowrap}}
+footer .flogo{outline:1px solid #5A5F6B;outline-offset:0}
