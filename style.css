@@ -514,3 +514,9 @@ footer .cols{grid-template-columns:2fr 1fr}
 @media (max-width:860px){.split .portrait{order:-1}.portrait img{max-width:260px}}
 .portrait img{max-width:340px !important}
 @media (max-width:640px){.portrait img{max-width:220px !important}}
+/* iPhone : pas de couleur système sur les boutons et champs */
+button,input,select,textarea{-webkit-appearance:none;appearance:none;-webkit-tap-highlight-color:transparent}
+.burger{color:var(--ink) !important;background:#fff !important;border:1px solid var(--ink) !important;border-radius:0 !important}
+form select{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%231A1A1A' stroke-width='1.6'/%3E%3C/svg%3E") no-repeat right 14px center !important;padding-right:38px !important;color:var(--ink)}
+form input[type=checkbox]{-webkit-appearance:checkbox;appearance:auto;width:18px !important;height:18px;accent-color:var(--ink)}
+a[href^="tel"],a[x-apple-data-detectors]{color:inherit !important;text-decoration:none !important}
