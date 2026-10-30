@@ -496,3 +496,9 @@ footer .cols{grid-template-columns:2fr 1fr}
   .m-contact{padding:8px 11px;font-size:14px}
 }
 @media (max-width:370px){.brand b{font-size:17px !important}.m-contact{padding:7px 9px}}
+/* téléphone : Contact tout à droite, plus de doublon dans le menu */
+@media (max-width:960px){
+  .burger{order:2}
+  .m-contact{order:3}
+  .nav .nav-cta{display:none !important}
+}
