@@ -456,3 +456,13 @@ footer .cols{grid-template-columns:2fr 1fr}
 .bg-g .btn:not(.btn-contact){background:#fff !important;color:var(--ink) !important;border:2px solid var(--ink) !important}
 .bg-g .btn:not(.btn-contact):hover{background:var(--ink) !important;color:#fff !important}
 .hero .btn.btn-line-w{background:#fff !important;color:var(--ink) !important;border:2px solid var(--ink) !important}
+/* hiérarchie : titre et texte de mission plus petits que le haut de page */
+.mission h2{font-size:32px !important}
+.mission .lead{font-size:17px !important;color:#4A4A4A;max-width:780px}
+.pagehead p{font-size:20px}
+@media (max-width:640px){
+  .pagehead p{font-size:17px !important}
+  .mission h2{font-size:21px !important}
+  .mission .lead{font-size:15px !important;line-height:1.55}
+  .twocol .list li{font-size:15px !important}
+}
