@@ -562,3 +562,9 @@ footer .fbrow{gap:38px}
 /* le bandeau contact garde son orange pâle, quelle que soit l alternance */
 section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;border:0 !important}
 .linkcard:hover{border-color:var(--ink) !important}
+/* bandeau contact centré */
+.cta .wrap{display:block !important;text-align:center}
+.cta .ck{display:block !important;font-size:15px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#E07A10;margin:0 0 12px}
+.cta h2{font-family:SourceSans,Calibri,'Segoe UI',Arial,sans-serif !important;font-weight:700;font-size:32px !important;letter-spacing:-.3px;margin:0 0 10px !important}
+.cta .cs{display:block !important;margin:0 0 26px;color:#555;font-size:18px}
+@media (max-width:640px){.cta h2{font-size:26px !important}.cta .cs{font-size:17px}.cta .ck{font-size:14px}}
