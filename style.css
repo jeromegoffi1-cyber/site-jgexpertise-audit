@@ -398,3 +398,9 @@ footer .cols{grid-template-columns:2fr 1fr}
 /* petit accent orange au-dessus des titres d'expertise */
 .domain .dhead{display:block;margin-bottom:16px}
 .domain .dhead:before{content:"";display:block;width:32px;height:3px;background:var(--sun);margin-bottom:14px}
+/* texte toujours en noir : la couleur est réservée au contact et aux traits */
+.kicker,.hero .kicker,.on-dark .kicker,.pagehead .kicker,.fe .tag,.post .cat,.article .cat,.mission h3.lbl{color:var(--ink) !important}
+.more,.post span.more,.article .back,.pagehead .back,.contact-solo a,.article a{color:var(--ink) !important}
+.more{text-decoration:underline;text-decoration-color:var(--sun);text-decoration-thickness:2px;text-underline-offset:4px}
+.more:hover{color:var(--sun) !important}
+.nav a.on,.nav>a:hover,.nav .dd>a:hover{border-bottom-color:var(--sun) !important}
