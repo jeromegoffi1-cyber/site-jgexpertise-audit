@@ -552,3 +552,4 @@ footer .fbrow .flogo{width:36px !important;height:36px !important}
 footer .fmail{width:auto !important}
 @media (max-width:640px){footer .fmail a{font-size:16px !important}}
 footer .fbrow{gap:26px}
+footer .fbrow{gap:50px}
