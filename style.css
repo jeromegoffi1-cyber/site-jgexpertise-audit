@@ -404,3 +404,7 @@ footer .cols{grid-template-columns:2fr 1fr}
 .more{text-decoration:underline;text-decoration-color:var(--sun);text-decoration-thickness:2px;text-underline-offset:4px}
 .more:hover{color:var(--sun) !important}
 .nav a.on,.nav>a:hover,.nav .dd>a:hover{border-bottom-color:var(--sun) !important}
+/* logique des couleurs : bleu = contacter ; orange = repère graphique ; noir = texte et navigation */
+.list li:before,.checks li:before,.twocol .list li:before,.cardd li:before{background:var(--sun) !important}
+.twocol .col:before,.twocol .col:last-child:before{background:var(--sun) !important}
+.domain .num,.flow li:before{color:var(--ink) !important}
