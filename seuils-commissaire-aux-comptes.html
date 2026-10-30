@@ -12,29 +12,38 @@
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="./">JG Expertise &amp; Audit</a>
+    <a class="brand" href="./"><b>JG Expertise &amp; Audit</b><small>Expert-comptable · Commissaire aux comptes</small></a>
+    <button class="burger" onclick="document.querySelector('.nav').classList.toggle('open')" aria-label="Menu">Menu</button>
     <nav class="nav">
-      <a href="./#expertise">Expertise comptable</a>
+      <div class="dd"><a href="./#expertise">Expertise comptable</a>
+        <div class="menu">
+          <a href="gerer-votre-quotidien.html">Gérer votre quotidien</a>
+          <a href="developper-votre-activite.html">Développer votre activité</a>
+          <a href="construire-votre-patrimoine.html">Construire votre patrimoine</a>
+          <a href="facturation-electronique.html">Facturation électronique</a>
+        </div>
+      </div>
       <a href="audit.html">Audit</a>
-      <a href="facturation-electronique.html">Facturation électronique</a>
       <a href="le-cabinet.html">Le cabinet</a>
-      <a href="./#actualites">Actualités</a>
-      <a href="#contact">Contact</a>
+      <a href="actualites.html" class="on">Actualités</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <main class="article">
   <div class="wrap">
-    <a class="back" href="./#actualites">← Toutes les actualités</a>
-    <p class="date">Octobre 2026</p>
+    <a class="back" href="actualites.html">← Toutes les actualités</a>
+    <p class="date"><span class="cat">Audit</span> Octobre 2026</p>
     <h1>Commissaire aux comptes : les seuils de désignation</h1>
+    <p class="chapo">Depuis les exercices ouverts en 2024, les seuils qui imposent la nomination d'un commissaire aux comptes ont été relevés. Les critères à retenir, les cas où la nomination reste obligatoire et le moment où l'obligation prend fin.</p>
 
     <p>Les sociétés commerciales (SA, SAS, SARL, SNC…), y compris les sociétés d'exercice libéral, doivent nommer un commissaire aux comptes lorsqu'elles dépassent, à la clôture d'un exercice, deux des trois seuils suivants. Ces seuils s'appliquent aux exercices ouverts depuis le 1er janvier 2024.</p>
 
@@ -58,18 +67,42 @@
   </div>
 </main>
 
-<section class="contactband" id="contact">
+<section class="cta">
   <div class="wrap">
-    <h2>Contact</h2>
-    <p><span>Téléphone</span><a href="tel:+596696880386">+596 696 88 03 86</a></p>
-    <p><span>Mail</span><a href="mailto:contact@jgexpertise-audit.fr">contact@jgexpertise-audit.fr</a></p>
+    <div>
+      <h2>Un projet, une question&nbsp;?</h2>
+      <p>Laissez vos coordonnées, je vous rappelle.</p>
+    </div>
+    <a class="btn" href="contact.html">Être recontacté</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 JG Expertise &amp; Audit — Jérôme Goffi, expert-comptable (Ordre, conseil régional de la Martinique) et commissaire aux comptes, membre de la compagnie régionale des commissaires aux comptes de Fort-de-France</span>
-    <a href="mentions-legales.html">Mentions légales</a>
+    <div class="cols">
+      <div>
+        <b class="fb">JG Expertise &amp; Audit</b>
+        <p>Expertise comptable, audit et conseil aux dirigeants, à Fort-de-France.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+596696880386">+596 696 88 03 86</a></p>
+        <p><a href="mailto:contact@jgexpertise-audit.fr">contact@jgexpertise-audit.fr</a></p>
+        <p>Fort-de-France, Martinique</p>
+      </div>
+      <div>
+        <h4>Le site</h4>
+        <p><a href="./#expertise">Expertise comptable</a></p>
+        <p><a href="audit.html">Audit</a></p>
+        <p><a href="le-cabinet.html">Le cabinet</a></p>
+        <p><a href="actualites.html">Actualités</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 JG Expertise &amp; Audit · Jérôme Goffi, expert-comptable inscrit au tableau de l'Ordre (conseil régional de la Martinique) et commissaire aux comptes inscrit sur la liste de la Haute autorité de l'audit</span>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </div>
   </div>
 </footer>
 

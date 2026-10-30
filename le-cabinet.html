@@ -12,20 +12,28 @@
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="./">JG Expertise &amp; Audit</a>
+    <a class="brand" href="./"><b>JG Expertise &amp; Audit</b><small>Expert-comptable · Commissaire aux comptes</small></a>
+    <button class="burger" onclick="document.querySelector('.nav').classList.toggle('open')" aria-label="Menu">Menu</button>
     <nav class="nav">
-      <a href="./#expertise">Expertise comptable</a>
+      <div class="dd"><a href="./#expertise">Expertise comptable</a>
+        <div class="menu">
+          <a href="gerer-votre-quotidien.html">Gérer votre quotidien</a>
+          <a href="developper-votre-activite.html">Développer votre activité</a>
+          <a href="construire-votre-patrimoine.html">Construire votre patrimoine</a>
+          <a href="facturation-electronique.html">Facturation électronique</a>
+        </div>
+      </div>
       <a href="audit.html">Audit</a>
-      <a href="facturation-electronique.html">Facturation électronique</a>
-      <a href="le-cabinet.html">Le cabinet</a>
-      <a href="./#actualites">Actualités</a>
-      <a href="#contact">Contact</a>
+      <a href="le-cabinet.html" class="on">Le cabinet</a>
+      <a href="actualites.html">Actualités</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
@@ -33,46 +41,70 @@
 <div class="pagehead">
   <div class="wrap">
     <p class="kicker">Le cabinet</p>
-    <h1>JG Expertise &amp; Audit</h1>
-    <p>Un cabinet d'expertise comptable et d'audit à Fort-de-France.</p>
+    <h1>Jérôme Goffi</h1>
+    <p>Expert-comptable et commissaire aux comptes à Fort-de-France.</p>
   </div>
-</div>
-<section>
-  <div class="wrap two">
-    <div>
+</div><section>
+  <div class="wrap split">
+    <div class="prose">
       <p>J'accompagne les dirigeants de TPE-PME, les professions libérales et les acteurs du secteur associatif dans leurs enjeux de gestion, de structuration et de développement.</p>
       <p>Expert-comptable et commissaire aux comptes, j'interviens au-delà de la production comptable pour apporter un regard indépendant sur les chiffres, l'organisation et les décisions à prendre.</p>
       <p>Mon approche est orientée vers des problématiques concrètes : structuration financière et juridique, pilotage de l'activité, amélioration des outils de gestion, sécurisation des processus, audit et accompagnement des projets de développement.</p>
       <p>L'objectif : permettre aux dirigeants et responsables d'organisation de mieux comprendre leur situation, d'anticiper les difficultés et de prendre leurs décisions avec une information fiable et exploitable.</p>
-      <p style="color:var(--grey);font-size:17px">Expert-comptable inscrit au tableau de l'Ordre (conseil régional de la Martinique). Commissaire aux comptes inscrit sur la liste de la Haute autorité de l'audit.</p>
+      <p><a class="btn" href="contact.html">Prendre rendez-vous</a></p>
     </div>
-    <div><img src="img/jerome-goffi.jpg" alt="Jérôme Goffi" style="width:100%;max-width:360px;height:auto;display:block"><p style="font-size:17px;margin-top:10px"><strong>Jérôme Goffi</strong><br>Expert-comptable et commissaire aux comptes</p></div>
+    <div class="portrait">
+      <img src="img/jerome-goffi.jpg" alt="Jérôme Goffi" width="600" height="862">
+      <p><strong>Jérôme Goffi</strong><br>Expert-comptable inscrit au tableau de l'Ordre (conseil régional de la Martinique)<br>Commissaire aux comptes inscrit sur la liste de la Haute autorité de l'audit</p>
+    </div>
   </div>
 </section>
-<section class="band">
+<section class="bg-ivory">
   <div class="wrap">
-    <h2>Domaines d'intervention</h2>
-    <div class="engag" style="margin-top:24px">
-      <div><strong>Structuration financière et juridique</strong></div>
-      <div><strong>Pilotage de l'activité</strong></div>
-      <div><strong>Outils de gestion</strong></div>
-      <div><strong>Sécurisation des processus</strong></div>
+    <p class="kicker">Domaines d'intervention</p>
+    <div class="tags">
+      <span>Structuration financière et juridique</span><span>Pilotage de l'activité</span><span>Amélioration des outils de gestion</span>
+      <span>Sécurisation des processus</span><span>Audit</span><span>Projets de développement</span>
     </div>
   </div>
 </section>
 
-<section class="contactband" id="contact">
+<section class="cta">
   <div class="wrap">
-    <h2>Contact</h2>
-    <p><span>Téléphone</span><a href="tel:+596696880386">+596 696 88 03 86</a></p>
-    <p><span>Mail</span><a href="mailto:contact@jgexpertise-audit.fr">contact@jgexpertise-audit.fr</a></p>
+    <div>
+      <h2>Un projet, une question&nbsp;?</h2>
+      <p>Laissez vos coordonnées, je vous rappelle.</p>
+    </div>
+    <a class="btn" href="contact.html">Être recontacté</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 JG Expertise &amp; Audit — Jérôme Goffi, expert-comptable (Ordre, conseil régional de la Martinique) et commissaire aux comptes, membre de la compagnie régionale des commissaires aux comptes de Fort-de-France</span>
-    <a href="mentions-legales.html">Mentions légales</a>
+    <div class="cols">
+      <div>
+        <b class="fb">JG Expertise &amp; Audit</b>
+        <p>Expertise comptable, audit et conseil aux dirigeants, à Fort-de-France.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+596696880386">+596 696 88 03 86</a></p>
+        <p><a href="mailto:contact@jgexpertise-audit.fr">contact@jgexpertise-audit.fr</a></p>
+        <p>Fort-de-France, Martinique</p>
+      </div>
+      <div>
+        <h4>Le site</h4>
+        <p><a href="./#expertise">Expertise comptable</a></p>
+        <p><a href="audit.html">Audit</a></p>
+        <p><a href="le-cabinet.html">Le cabinet</a></p>
+        <p><a href="actualites.html">Actualités</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 JG Expertise &amp; Audit · Jérôme Goffi, expert-comptable inscrit au tableau de l'Ordre (conseil régional de la Martinique) et commissaire aux comptes inscrit sur la liste de la Haute autorité de l'audit</span>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </div>
   </div>
 </footer>
 
