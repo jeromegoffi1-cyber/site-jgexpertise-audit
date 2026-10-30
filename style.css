@@ -385,3 +385,6 @@ footer .cols{grid-template-columns:2fr 1fr}
 .cardd:before,.twocol .col:before{content:"";position:absolute;top:-1px;left:-1px;width:16.66%;height:4px;background:var(--blue)}
 .twocol .col:last-child:before{background:var(--sun)}
 .cardd:before{display:none !important}
+.twocol .col:before{display:none !important}
+.twocol .col{border-left:4px solid var(--blue) !important}
+.twocol .col:last-child{border-left:4px solid var(--sun) !important}
