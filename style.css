@@ -272,3 +272,13 @@ h1,h2,h3,.brand b,footer b.fb,.tip b,.dates3 b{font-family:Inter,Calibri,'Segoe 
 .flow li:before{border-bottom:none;padding-bottom:0;margin-bottom:8px;font-size:22px}
 .mission .list{columns:3}
 @media (max-width:900px){.mission .list{columns:1}}
+
+/* polices option B */
+@font-face{font-family:'Caslon';src:url(fonts/libre-caslon-text-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'SourceSans';src:url(fonts/source-sans-3-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'SourceSans';src:url(fonts/source-sans-3-latin-600-normal.woff2) format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'SourceSans';src:url(fonts/source-sans-3-latin-700-normal.woff2) format('woff2');font-weight:700;font-display:swap}
+body,form input,form textarea,form select,form button,.burger,.mission h3.lbl,.domain .num,.flow li:before,.timeline li:before,.quote span{font-family:SourceSans,Calibri,'Segoe UI',Arial,sans-serif !important}
+h1,h2,h3,.brand b,footer b.fb,.dates3 b{font-family:Caslon,Cambria,Georgia,serif !important;font-weight:700;letter-spacing:-.2px}
+.mission h3.lbl{font-family:SourceSans,Arial,sans-serif !important;letter-spacing:2px}
+body{font-size:19px}
