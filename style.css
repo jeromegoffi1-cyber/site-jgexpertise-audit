@@ -466,3 +466,10 @@ footer .cols{grid-template-columns:2fr 1fr}
   .mission .lead{font-size:15px !important;line-height:1.55}
   .twocol .list li{font-size:15px !important}
 }
+/* volets d'expertise en cadres distincts */
+.domains{border-top:none !important;gap:24px !important}
+.domain,.domain+.domain,.domain:last-child{background:#fff;border:1px solid var(--line) !important;padding:32px 30px !important}
+.domain ul{margin-bottom:18px}
+@media (max-width:900px){.domains{gap:16px !important}.domain,.domain+.domain,.domain:last-child{padding:24px 22px !important}}
+/* dates de la facturation électronique en cadres distincts sur téléphone */
+@media (max-width:820px){.dates3{gap:14px}.dates3 div{background:#fff;border:1px solid var(--line);border-top:3px solid var(--ink);padding:16px 18px}}
