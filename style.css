@@ -416,3 +416,5 @@ footer .cols{grid-template-columns:2fr 1fr}
 .twocol .col:first-child:before{background:var(--ink) !important}
 .twocol .col:last-child .list li:before,.twocol .col:last-child:before{background:var(--sun) !important}
 .dates3 div{border-top-color:var(--ink) !important}
+.facts{border-top:none !important;position:relative;padding-top:2px}
+.facts:before{content:"";position:absolute;top:0;left:0;width:33.33%;height:2px;background:var(--ink)}
