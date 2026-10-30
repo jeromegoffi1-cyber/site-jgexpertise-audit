@@ -556,3 +556,6 @@ footer .fbrow{gap:50px}
 footer .fbrow{gap:38px}
 /* bandeau contact orange pâle */
 .cta{background:#FDEEDC !important;border:0 !important}
+/* fond bleuté plus clair */
+:root{--ivory:#F7F9FE}
+.bg-g{background:#F7F9FE !important}
