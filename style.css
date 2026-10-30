@@ -374,3 +374,5 @@ footer .cols{grid-template-columns:2fr 1fr}
   footer b.fb{font-size:20px}
   form input,form textarea,form select{font-size:16px}
 }
+/* cadres : uniquement le filet fin */
+.cardd,.twocol .col,.twocol .col:last-child,.fe .box{border:1px solid var(--line) !important}
