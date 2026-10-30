@@ -295,3 +295,4 @@ body{font-size:19px}
 .hero .photo .cap{font-size:13.5px;color:var(--grey);margin:10px 0 0;text-align:right}
 .hero .photo img{max-width:340px}
 @media (max-width:900px){.hero .photo .cap{text-align:left}}
+footer .cols{grid-template-columns:2fr 1fr}
