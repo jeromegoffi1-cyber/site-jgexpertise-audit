@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — JG Expertise &amp; Audit</title>
+<meta name="description" content="Contacter Jérôme Goffi, expert-comptable et commissaire aux comptes à Fort-de-France.">
+<meta property="og:title" content="Contact — JG Expertise &amp; Audit">
+<meta property="og:description" content="Contacter Jérôme Goffi, expert-comptable et commissaire aux comptes à Fort-de-France.">
+<meta property="og:image" content="https://www.jgexpertise-audit.fr/img/apercu.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="./"><b>JG Expertise &amp; Audit</b><small>Expert-comptable · Commissaire aux comptes</small></a>
+    <button class="burger" onclick="document.querySelector('.nav').classList.toggle('open')" aria-label="Menu">Menu</button>
+    <nav class="nav">
+      <div class="dd"><a href="./#expertise">Expertise comptable</a>
+        <div class="menu">
+          <a href="gerer-votre-quotidien.html">Gérer votre quotidien</a>
+          <a href="developper-votre-activite.html">Développer votre activité</a>
+          <a href="construire-votre-patrimoine.html">Construire votre patrimoine</a>
+          <a href="facturation-electronique.html">Facturation électronique</a>
+        </div>
+      </div>
+      <a href="audit.html">Audit</a>
+      <a href="le-cabinet.html">Le cabinet</a>
+      <a href="actualites.html">Actualités</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="pagehead">
+  <div class="wrap">
+    <p class="kicker">Contact</p>
+    <h1>Prendre contact</h1>
+    <p>Vous avez un projet, une question ou souhaitez un rendez-vous ? Laissez un message, je vous recontacte rapidement.</p>
+  </div>
+</div><section>
+  <div class="wrap contact-grid">
+    <dl class="coords">
+      <dt>Téléphone</dt><dd><a href="tel:+596696880386">+596 696 88 03 86</a></dd>
+      <dt>Mail</dt><dd><a href="mailto:contact@jgexpertise-audit.fr">contact@jgexpertise-audit.fr</a></dd>
+      <dt>Cabinet</dt><dd>Fort-de-France, Martinique</dd>
+    </dl>
+    <form action="https://formsubmit.co/contact@jgexpertise-audit.fr" method="POST">
+      <input type="hidden" name="_subject" value="Nouveau message depuis jgexpertise-audit.fr">
+      <input type="hidden" name="_next" value="https://www.jgexpertise-audit.fr/merci.html">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <label for="societe">Société</label>
+      <input id="societe" name="Société" type="text" autocomplete="organization">
+      <div class="row">
+        <div><label for="nom">Nom et prénom <span class="req">*</span></label><input id="nom" name="Nom et prénom" type="text" required autocomplete="name"></div>
+        <div><label for="tel">Téléphone <span class="req">*</span></label><input id="tel" name="Téléphone" type="tel" required autocomplete="tel"></div>
+      </div>
+      <label for="email">E-mail <span class="req">*</span></label>
+      <input id="email" name="email" type="email" required autocomplete="email">
+      <label for="msg">Message</label>
+      <textarea id="msg" name="Message"></textarea>
+      <label class="consent"><input type="checkbox" required><span>J'accepte que mes coordonnées soient utilisées pour répondre à ma demande (voir les <a href="mentions-legales.html">mentions légales</a>).</span></label>
+      <button class="btn" type="submit">Envoyer</button>
+    </form>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <b class="fb">JG Expertise &amp; Audit</b>
+        <p>Expertise comptable, audit et conseil aux dirigeants, à Fort-de-France.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+596696880386">+596 696 88 03 86</a></p>
+        <p><a href="mailto:contact@jgexpertise-audit.fr">contact@jgexpertise-audit.fr</a></p>
+        <p>Fort-de-France, Martinique</p>
+      </div>
+      <div>
+        <h4>Le site</h4>
+        <p><a href="./#expertise">Expertise comptable</a></p>
+        <p><a href="audit.html">Audit</a></p>
+        <p><a href="le-cabinet.html">Le cabinet</a></p>
+        <p><a href="actualites.html">Actualités</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 JG Expertise &amp; Audit · Jérôme Goffi, expert-comptable inscrit au tableau de l'Ordre (conseil régional de la Martinique) et commissaire aux comptes inscrit sur la liste de la Haute autorité de l'audit</span>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

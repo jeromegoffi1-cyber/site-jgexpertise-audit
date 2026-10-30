@@ -12,72 +12,118 @@
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="./">JG Expertise &amp; Audit</a>
+    <a class="brand" href="./"><b>JG Expertise &amp; Audit</b><small>Expert-comptable · Commissaire aux comptes</small></a>
+    <button class="burger" onclick="document.querySelector('.nav').classList.toggle('open')" aria-label="Menu">Menu</button>
     <nav class="nav">
-      <a href="./#expertise">Expertise comptable</a>
+      <div class="dd"><a href="./#expertise" class="on">Expertise comptable</a>
+        <div class="menu">
+          <a href="gerer-votre-quotidien.html">Gérer votre quotidien</a>
+          <a href="developper-votre-activite.html">Développer votre activité</a>
+          <a href="construire-votre-patrimoine.html">Construire votre patrimoine</a>
+          <a href="facturation-electronique.html">Facturation électronique</a>
+        </div>
+      </div>
       <a href="audit.html">Audit</a>
-      <a href="facturation-electronique.html">Facturation électronique</a>
       <a href="le-cabinet.html">Le cabinet</a>
-      <a href="./#actualites">Actualités</a>
-      <a href="#contact">Contact</a>
+      <a href="actualites.html">Actualités</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <div class="pagehead">
   <div class="wrap">
-    <p class="kicker">Développer votre activité</p>
-    <h1>Prévisionnels, suivi et financement</h1>
-    <p>Prévisionnels, situations en cours d'année, tableaux de bord, trésorerie et dossiers de financement.</p>
-    <div class="anchors"><a href="#previsionnels">Prévisionnels</a><a href="#pilotage">Tableaux de bord</a><a href="#financement">Financement</a></div>
+    <p class="kicker">Expertise comptable</p>
+    <h1>Développer votre activité</h1>
+    <p>Création, investissement, embauche : un projet se prépare chiffres en main. Le cabinet vous aide à le construire, à le suivre et à le financer.</p>
   </div>
-</div><section class="block" id="previsionnels">
+</div><section class="mission">
   <div class="wrap">
-    <h2>Prévisionnel et installation</h2>
-    
-    <ul class="checks"><li>Budget prévisionnel</li><li>Plan de financement</li><li>Dossier de prêt bancaire</li><li>Choix de la forme juridique à la création</li></ul>
-    <h3 class="h3small">Déroulement de la mission</h3>
-    <ol class="steps"><li><span>1</span>Premier rendez-vous pour faire le point</li><li><span>2</span>Proposition et lettre de mission</li><li><span>3</span>Réalisation de la mission</li><li><span>4</span>Restitution et suivi</li></ol>
-    
+    <div>
+      <h2>Prévisionnel et installation</h2>
+      <p class="lead">Avant de vous lancer, vous savez ce que votre projet peut rapporter, ce qu'il va coûter et comment le présenter à votre banque.</p>
+    </div>
+    <div>
+      <h3>Missions</h3>
+      <ul class="list"><li>Budget prévisionnel</li><li>Plan de financement</li><li>Dossier de prêt bancaire</li><li>Choix de la forme juridique à la création</li></ul>
+      <h3>Déroulement</h3>
+      <ol class="timeline"><li>Premier rendez-vous pour faire le point</li><li>Proposition et lettre de mission</li><li>Réalisation de la mission</li><li>Restitution et suivi</li></ol>
+      
+    </div>
   </div>
-</section><section class="block" id="pilotage">
+</section><section class="mission">
   <div class="wrap">
-    <h2>Suivi de l'activité en cours d'année</h2>
-    
-    <ul class="checks"><li>Situations mensuelles ou trimestrielles</li><li>Tableaux de bord adaptés à votre activité</li><li>Suivi de la rentabilité</li><li>Analyse des écarts avec le budget</li></ul>
-    <h3 class="h3small">Déroulement de la mission</h3>
-    <ol class="steps"><li><span>1</span>Choix des indicateurs utiles</li><li><span>2</span>Mise en place du suivi</li><li><span>3</span>Situations périodiques</li><li><span>4</span>Point régulier sur les chiffres</li></ol>
-    
+    <div>
+      <h2>Suivi de l'activité</h2>
+      <p class="lead">Vous suivez l'évolution de votre activité au fil de l'année, sans attendre le bilan pour savoir où vous en êtes.</p>
+    </div>
+    <div>
+      <h3>Missions</h3>
+      <ul class="list"><li>Situations mensuelles ou trimestrielles</li><li>Tableaux de bord adaptés à votre activité</li><li>Suivi de la rentabilité</li><li>Analyse des écarts avec le budget</li></ul>
+      <h3>Déroulement</h3>
+      <ol class="timeline"><li>Choix des indicateurs utiles</li><li>Mise en place du suivi</li><li>Situations périodiques</li><li>Point régulier sur les chiffres</li></ol>
+      
+    </div>
   </div>
-</section><section class="block" id="financement">
+</section><section class="mission">
   <div class="wrap">
-    <h2>Trésorerie et financement</h2>
-    
-    <ul class="checks"><li>Prévisions de trésorerie</li><li>Recherche de financement</li><li>Préparation des rendez-vous bancaires</li><li>Dossiers d'aides et de subventions</li></ul>
-    <h3 class="h3small">Déroulement de la mission</h3>
-    <ol class="steps"><li><span>1</span>Premier rendez-vous pour faire le point</li><li><span>2</span>Proposition et lettre de mission</li><li><span>3</span>Réalisation de la mission</li><li><span>4</span>Restitution et suivi</li></ol>
-    
+    <div>
+      <h2>Trésorerie et financement</h2>
+      <p class="lead">Vous anticipez vos besoins de trésorerie et vous arrivez préparé à vos rendez-vous bancaires.</p>
+    </div>
+    <div>
+      <h3>Missions</h3>
+      <ul class="list"><li>Prévisions de trésorerie</li><li>Recherche de financement</li><li>Préparation des rendez-vous bancaires</li><li>Dossiers d'aides et de subventions</li></ul>
+      <h3>Déroulement</h3>
+      <ol class="timeline"><li>Premier rendez-vous pour faire le point</li><li>Proposition et lettre de mission</li><li>Réalisation de la mission</li><li>Restitution et suivi</li></ol>
+      
+    </div>
   </div>
 </section>
 
-<section class="contactband" id="contact">
+<section class="cta">
   <div class="wrap">
-    <h2>Contact</h2>
-    <p><span>Téléphone</span><a href="tel:+596696880386">+596 696 88 03 86</a></p>
-    <p><span>Mail</span><a href="mailto:contact@jgexpertise-audit.fr">contact@jgexpertise-audit.fr</a></p>
+    <div>
+      <h2>Un projet, une question&nbsp;?</h2>
+      <p>Laissez vos coordonnées, je vous rappelle.</p>
+    </div>
+    <a class="btn" href="contact.html">Être recontacté</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 JG Expertise &amp; Audit — Jérôme Goffi, expert-comptable (Ordre, conseil régional de la Martinique) et commissaire aux comptes, membre de la compagnie régionale des commissaires aux comptes de Fort-de-France</span>
-    <a href="mentions-legales.html">Mentions légales</a>
+    <div class="cols">
+      <div>
+        <b class="fb">JG Expertise &amp; Audit</b>
+        <p>Expertise comptable, audit et conseil aux dirigeants, à Fort-de-France.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+596696880386">+596 696 88 03 86</a></p>
+        <p><a href="mailto:contact@jgexpertise-audit.fr">contact@jgexpertise-audit.fr</a></p>
+        <p>Fort-de-France, Martinique</p>
+      </div>
+      <div>
+        <h4>Le site</h4>
+        <p><a href="./#expertise">Expertise comptable</a></p>
+        <p><a href="audit.html">Audit</a></p>
+        <p><a href="le-cabinet.html">Le cabinet</a></p>
+        <p><a href="actualites.html">Actualités</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 JG Expertise &amp; Audit · Jérôme Goffi, expert-comptable inscrit au tableau de l'Ordre (conseil régional de la Martinique) et commissaire aux comptes inscrit sur la liste de la Haute autorité de l'audit</span>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </div>
   </div>
 </footer>
 

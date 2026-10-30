@@ -12,63 +12,104 @@
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="./">JG Expertise &amp; Audit</a>
+    <a class="brand" href="./"><b>JG Expertise &amp; Audit</b><small>Expert-comptable · Commissaire aux comptes</small></a>
+    <button class="burger" onclick="document.querySelector('.nav').classList.toggle('open')" aria-label="Menu">Menu</button>
     <nav class="nav">
-      <a href="./#expertise">Expertise comptable</a>
+      <div class="dd"><a href="./#expertise" class="on">Expertise comptable</a>
+        <div class="menu">
+          <a href="gerer-votre-quotidien.html">Gérer votre quotidien</a>
+          <a href="developper-votre-activite.html">Développer votre activité</a>
+          <a href="construire-votre-patrimoine.html">Construire votre patrimoine</a>
+          <a href="facturation-electronique.html">Facturation électronique</a>
+        </div>
+      </div>
       <a href="audit.html">Audit</a>
-      <a href="facturation-electronique.html">Facturation électronique</a>
       <a href="le-cabinet.html">Le cabinet</a>
-      <a href="./#actualites">Actualités</a>
-      <a href="#contact">Contact</a>
+      <a href="actualites.html">Actualités</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <div class="pagehead">
   <div class="wrap">
-    <p class="kicker">Gérer votre quotidien</p>
-    <h1>Comptabilité et fiscalité</h1>
-    <p>Tenue et révision de la comptabilité, comptes annuels et obligations fiscales de l'entreprise et de son dirigeant.</p>
-    <div class="anchors"><a href="#comptabilite">Comptabilité</a><a href="#fiscalite">Fiscalité</a></div>
+    <p class="kicker">Expertise comptable</p>
+    <h1>Gérer votre quotidien</h1>
+    <p>Gardez votre temps pour votre activité : le cabinet s'occupe de votre comptabilité et de vos obligations fiscales, tout au long de l'année.</p>
   </div>
-</div><section class="block" id="comptabilite">
+</div><section class="mission">
   <div class="wrap">
-    <h2>Une comptabilité à jour</h2>
-    
-    <ul class="checks"><li>Tenue de la comptabilité</li><li>Révision des comptes</li><li>Comptes annuels et liasse fiscale</li><li>Déclaration 2035 des professions libérales</li><li>Situations intermédiaires</li><li>Outils de saisie et de gestion en ligne</li></ul>
-    <h3 class="h3small">Déroulement de la mission</h3>
-    <ol class="steps"><li><span>1</span>Premier rendez-vous et lettre de mission</li><li><span>2</span>Mise en place des outils et des accès</li><li><span>3</span>Suivi tout au long de l'année</li><li><span>4</span>Comptes annuels et rendez-vous de bilan</li></ol>
-    
+    <div>
+      <h2>Comptabilité</h2>
+      <p class="lead">Votre comptabilité est tenue à jour, vos comptes annuels sont prêts à temps et vous disposez de vos chiffres quand vous en avez besoin.</p>
+    </div>
+    <div>
+      <h3>Missions</h3>
+      <ul class="list"><li>Tenue de la comptabilité</li><li>Révision des comptes</li><li>Comptes annuels et liasse fiscale</li><li>Déclaration 2035 des professions libérales</li><li>Situations intermédiaires</li><li>Outils de saisie et de gestion en ligne</li></ul>
+      <h3>Déroulement</h3>
+      <ol class="timeline"><li>Premier rendez-vous et lettre de mission</li><li>Mise en place des outils et des accès</li><li>Suivi tout au long de l'année</li><li>Comptes annuels et rendez-vous de bilan</li></ol>
+      
+    </div>
   </div>
-</section><section class="block" id="fiscalite">
+</section><section class="mission">
   <div class="wrap">
-    <h2>Des déclarations fiscales maîtrisées</h2>
-    
-    <ul class="checks"><li>Déclarations de TVA</li><li>Octroi de mer</li><li>Impôt sur les sociétés et acomptes</li><li>Cotisation foncière des entreprises</li><li>Déclaration de revenus du dirigeant</li><li>Assistance en cas de contrôle fiscal</li></ul>
-    <h3 class="h3small">Déroulement de la mission</h3>
-    <ol class="steps"><li><span>1</span>Point sur votre situation fiscale</li><li><span>2</span>Calendrier de vos échéances</li><li><span>3</span>Préparation et dépôt des déclarations</li><li><span>4</span>Point annuel et pistes d'optimisation</li></ol>
-    
+    <div>
+      <h2>Fiscalité</h2>
+      <p class="lead">Vos déclarations sont préparées et déposées dans les délais, et votre situation fiscale est revue chaque année avec vous.</p>
+    </div>
+    <div>
+      <h3>Missions</h3>
+      <ul class="list"><li>Déclarations de TVA</li><li>Octroi de mer</li><li>Impôt sur les sociétés et acomptes</li><li>Cotisation foncière des entreprises</li><li>Déclaration de revenus du dirigeant</li><li>Assistance en cas de contrôle fiscal</li></ul>
+      <h3>Déroulement</h3>
+      <ol class="timeline"><li>Point sur votre situation fiscale</li><li>Calendrier de vos échéances</li><li>Préparation et dépôt des déclarations</li><li>Point annuel et pistes d'optimisation</li></ol>
+      
+    </div>
   </div>
 </section>
 
-<section class="contactband" id="contact">
+<section class="cta">
   <div class="wrap">
-    <h2>Contact</h2>
-    <p><span>Téléphone</span><a href="tel:+596696880386">+596 696 88 03 86</a></p>
-    <p><span>Mail</span><a href="mailto:contact@jgexpertise-audit.fr">contact@jgexpertise-audit.fr</a></p>
+    <div>
+      <h2>Un projet, une question&nbsp;?</h2>
+      <p>Laissez vos coordonnées, je vous rappelle.</p>
+    </div>
+    <a class="btn" href="contact.html">Être recontacté</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 JG Expertise &amp; Audit — Jérôme Goffi, expert-comptable (Ordre, conseil régional de la Martinique) et commissaire aux comptes, membre de la compagnie régionale des commissaires aux comptes de Fort-de-France</span>
-    <a href="mentions-legales.html">Mentions légales</a>
+    <div class="cols">
+      <div>
+        <b class="fb">JG Expertise &amp; Audit</b>
+        <p>Expertise comptable, audit et conseil aux dirigeants, à Fort-de-France.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+596696880386">+596 696 88 03 86</a></p>
+        <p><a href="mailto:contact@jgexpertise-audit.fr">contact@jgexpertise-audit.fr</a></p>
+        <p>Fort-de-France, Martinique</p>
+      </div>
+      <div>
+        <h4>Le site</h4>
+        <p><a href="./#expertise">Expertise comptable</a></p>
+        <p><a href="audit.html">Audit</a></p>
+        <p><a href="le-cabinet.html">Le cabinet</a></p>
+        <p><a href="actualites.html">Actualités</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 JG Expertise &amp; Audit · Jérôme Goffi, expert-comptable inscrit au tableau de l'Ordre (conseil régional de la Martinique) et commissaire aux comptes inscrit sur la liste de la Haute autorité de l'audit</span>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </div>
   </div>
 </footer>
 

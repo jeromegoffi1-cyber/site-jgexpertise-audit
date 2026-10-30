@@ -12,72 +12,118 @@
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="./">JG Expertise &amp; Audit</a>
+    <a class="brand" href="./"><b>JG Expertise &amp; Audit</b><small>Expert-comptable · Commissaire aux comptes</small></a>
+    <button class="burger" onclick="document.querySelector('.nav').classList.toggle('open')" aria-label="Menu">Menu</button>
     <nav class="nav">
-      <a href="./#expertise">Expertise comptable</a>
+      <div class="dd"><a href="./#expertise" class="on">Expertise comptable</a>
+        <div class="menu">
+          <a href="gerer-votre-quotidien.html">Gérer votre quotidien</a>
+          <a href="developper-votre-activite.html">Développer votre activité</a>
+          <a href="construire-votre-patrimoine.html">Construire votre patrimoine</a>
+          <a href="facturation-electronique.html">Facturation électronique</a>
+        </div>
+      </div>
       <a href="audit.html">Audit</a>
-      <a href="facturation-electronique.html">Facturation électronique</a>
       <a href="le-cabinet.html">Le cabinet</a>
-      <a href="./#actualites">Actualités</a>
-      <a href="#contact">Contact</a>
+      <a href="actualites.html">Actualités</a>
+      <a class="nav-cta" href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <div class="pagehead">
   <div class="wrap">
-    <p class="kicker">Construire votre patrimoine</p>
-    <h1>Rémunération, structuration, transmission</h1>
-    <p>Rémunération du dirigeant, passage en société, évaluation, cession et transmission.</p>
-    <div class="anchors"><a href="#remuneration">Rémunération du dirigeant</a><a href="#structuration">Structuration</a><a href="#transmission">Évaluation et transmission</a></div>
+    <p class="kicker">Expertise comptable</p>
+    <h1>Construire votre patrimoine</h1>
+    <p>Votre rémunération, la structure de votre activité et la transmission de votre entreprise engagent votre patrimoine. Ces choix se préparent avec un conseil indépendant.</p>
   </div>
-</div><section class="block" id="remuneration">
+</div><section class="mission">
   <div class="wrap">
-    <h2>Rémunération du dirigeant</h2>
-    
-    <ul class="checks"><li>Arbitrage entre rémunération et dividendes</li><li>Statut social du dirigeant</li><li>Protection sociale et prévoyance</li><li>Préparation de la retraite</li></ul>
-    <h3 class="h3small">Déroulement de la mission</h3>
-    <ol class="steps"><li><span>1</span>Premier rendez-vous pour faire le point</li><li><span>2</span>Proposition et lettre de mission</li><li><span>3</span>Réalisation de la mission</li><li><span>4</span>Restitution et suivi</li></ol>
-    
+    <div>
+      <h2>Rémunération du dirigeant</h2>
+      <p class="lead">Salaire, dividendes, protection sociale et retraite : le cabinet vous aide à trouver l'équilibre qui vous correspond.</p>
+    </div>
+    <div>
+      <h3>Missions</h3>
+      <ul class="list"><li>Arbitrage entre rémunération et dividendes</li><li>Statut social du dirigeant</li><li>Protection sociale et prévoyance</li><li>Préparation de la retraite</li></ul>
+      <h3>Déroulement</h3>
+      <ol class="timeline"><li>Premier rendez-vous pour faire le point</li><li>Proposition et lettre de mission</li><li>Réalisation de la mission</li><li>Restitution et suivi</li></ol>
+      
+    </div>
   </div>
-</section><section class="block" id="structuration">
+</section><section class="mission">
   <div class="wrap">
-    <h2>Passage en société</h2>
-    
-    <ul class="checks"><li>Passage d'une activité individuelle en société</li><li>Société d'exercice libéral (SELARL, SELAS)</li><li>Holding et société de participations financières de professions libérales</li><li>Société civile immobilière</li><li>Apports et transformation de société</li></ul>
-    <h3 class="h3small">Déroulement de la mission</h3>
-    <ol class="steps"><li><span>1</span>Premier rendez-vous pour faire le point</li><li><span>2</span>Proposition et lettre de mission</li><li><span>3</span>Réalisation de la mission</li><li><span>4</span>Restitution et suivi</li></ol>
-    
+    <div>
+      <h2>Passage en société</h2>
+      <p class="lead">Passer en société, créer une holding ou une société civile immobilière : le cabinet vous aide à choisir la bonne structure, au bon moment.</p>
+    </div>
+    <div>
+      <h3>Missions</h3>
+      <ul class="list"><li>Passage d'une activité individuelle en société</li><li>Société d'exercice libéral (SELARL, SELAS)</li><li>Holding et société de participations financières de professions libérales</li><li>Société civile immobilière</li><li>Apports et transformation de société</li></ul>
+      <h3>Déroulement</h3>
+      <ol class="timeline"><li>Premier rendez-vous pour faire le point</li><li>Proposition et lettre de mission</li><li>Réalisation de la mission</li><li>Restitution et suivi</li></ol>
+      
+    </div>
   </div>
-</section><section class="block" id="transmission">
+</section><section class="mission">
   <div class="wrap">
-    <h2>Cession et transmission</h2>
-    
-    <ul class="checks"><li>Évaluation de l'entreprise ou des parts</li><li>Préparation de la cession</li><li>Transmission familiale</li><li>Fiscalité de la sortie</li></ul>
-    <h3 class="h3small">Déroulement de la mission</h3>
-    <ol class="steps"><li><span>1</span>Diagnostic de la situation</li><li><span>2</span>Évaluation</li><li><span>3</span>Scénarios de cession ou de transmission</li><li><span>4</span>Accompagnement jusqu'à la signature</li></ol>
-    
+    <div>
+      <h2>Cession et transmission</h2>
+      <p class="lead">Vendre votre entreprise ou la transmettre à vos proches se prépare plusieurs années à l'avance. Le cabinet vous accompagne de l'évaluation jusqu'à la signature.</p>
+    </div>
+    <div>
+      <h3>Missions</h3>
+      <ul class="list"><li>Évaluation de l'entreprise ou des parts</li><li>Préparation de la cession</li><li>Transmission familiale</li><li>Fiscalité de la sortie</li></ul>
+      <h3>Déroulement</h3>
+      <ol class="timeline"><li>Diagnostic de la situation</li><li>Évaluation</li><li>Scénarios de cession ou de transmission</li><li>Accompagnement jusqu'à la signature</li></ol>
+      
+    </div>
   </div>
 </section>
 
-<section class="contactband" id="contact">
+<section class="cta">
   <div class="wrap">
-    <h2>Contact</h2>
-    <p><span>Téléphone</span><a href="tel:+596696880386">+596 696 88 03 86</a></p>
-    <p><span>Mail</span><a href="mailto:contact@jgexpertise-audit.fr">contact@jgexpertise-audit.fr</a></p>
+    <div>
+      <h2>Un projet, une question&nbsp;?</h2>
+      <p>Laissez vos coordonnées, je vous rappelle.</p>
+    </div>
+    <a class="btn" href="contact.html">Être recontacté</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 JG Expertise &amp; Audit — Jérôme Goffi, expert-comptable (Ordre, conseil régional de la Martinique) et commissaire aux comptes, membre de la compagnie régionale des commissaires aux comptes de Fort-de-France</span>
-    <a href="mentions-legales.html">Mentions légales</a>
+    <div class="cols">
+      <div>
+        <b class="fb">JG Expertise &amp; Audit</b>
+        <p>Expertise comptable, audit et conseil aux dirigeants, à Fort-de-France.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+596696880386">+596 696 88 03 86</a></p>
+        <p><a href="mailto:contact@jgexpertise-audit.fr">contact@jgexpertise-audit.fr</a></p>
+        <p>Fort-de-France, Martinique</p>
+      </div>
+      <div>
+        <h4>Le site</h4>
+        <p><a href="./#expertise">Expertise comptable</a></p>
+        <p><a href="audit.html">Audit</a></p>
+        <p><a href="le-cabinet.html">Le cabinet</a></p>
+        <p><a href="actualites.html">Actualités</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 JG Expertise &amp; Audit · Jérôme Goffi, expert-comptable inscrit au tableau de l'Ordre (conseil régional de la Martinique) et commissaire aux comptes inscrit sur la liste de la Haute autorité de l'audit</span>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </div>
   </div>
 </footer>
 
