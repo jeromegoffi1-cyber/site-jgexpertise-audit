@@ -525,3 +525,5 @@ a[href^="tel"],a[x-apple-data-detectors]{color:inherit !important;text-decoratio
 footer .zone{margin-top:14px}
 @media (max-width:900px){.hero .zone{font-size:16px;margin-bottom:26px}}
 .hero .zone span{display:block}
+footer .legal .lg{line-height:1.7}
+footer .zone span{display:block}
