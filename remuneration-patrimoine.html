@@ -23,7 +23,7 @@
   <div class="wrap">
     <a class="brand" href="./"><b>JG Expertise &amp; Audit</b><small>Expert-comptable · Commissaire aux comptes</small></a>
     <a class="m-contact" href="contact.html">Contact</a>
-    <button class="burger" onclick="document.querySelector('.nav').classList.toggle('open')" aria-label="Menu">Menu</button>
+    <button class="burger" aria-label="Menu" aria-expanded="false">Menu</button>
     <nav class="nav">
       <div class="dd"><a href="./#expertise" class="on">Expertise comptable</a>
         <div class="menu">
@@ -129,6 +129,18 @@
     </div>
   </div>
 </footer>
+
+<script>
+(function(){
+  var nav=document.querySelector('.nav'), bt=document.querySelector('.burger');
+  if(!nav||!bt) return;
+  function fermer(){nav.classList.remove('open');bt.textContent='Menu';bt.setAttribute('aria-expanded','false');}
+  bt.addEventListener('click',function(e){e.stopPropagation();var o=nav.classList.toggle('open');bt.textContent=o?'Fermer':'Menu';bt.setAttribute('aria-expanded',o?'true':'false');});
+  document.addEventListener('click',function(e){if(nav.classList.contains('open')&&!nav.contains(e.target)) fermer();});
+  nav.addEventListener('click',function(e){if(e.target.closest('a')) fermer();});
+  var y0=null; window.addEventListener('scroll',function(){if(!nav.classList.contains('open')){y0=null;return;} if(y0===null) y0=window.scrollY; if(Math.abs(window.scrollY-y0)>60) fermer();},{passive:true});
+})();
+</script>
 
 </body>
 </html>
