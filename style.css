@@ -512,3 +512,5 @@ footer .cols{grid-template-columns:2fr 1fr}
 @media (max-width:640px){.linkcard{padding:16px 16px}.lc-t{font-size:15.5px}.lc-arrow{width:36px;height:36px}}
 .linkcard{border-left:1px solid var(--line) !important}
 @media (max-width:860px){.split .portrait{order:-1}.portrait img{max-width:260px}}
+.portrait img{max-width:340px !important}
+@media (max-width:640px){.portrait img{max-width:220px !important}}
