@@ -533,3 +533,6 @@ footer .fmail{margin-top:14px}footer .fmail a{color:#C9CDD6;text-decoration:unde
 @media (max-width:1100px){.news{grid-template-columns:repeat(2,1fr) !important}}
 @media (max-width:640px){.news{grid-template-columns:1fr !important}}
 @media (min-width:1101px){.news .post h3{font-size:22px !important;line-height:1.25}}
+footer .fmail{display:flex;align-items:center;gap:12px}
+footer .flogo{width:36px;height:36px;display:block;flex:0 0 auto}
+@media (max-width:640px){footer .fmail{flex-direction:column;align-items:flex-start;gap:10px}footer .fmail a{white-space:nowrap}}
