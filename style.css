@@ -388,3 +388,5 @@ footer .cols{grid-template-columns:2fr 1fr}
 .twocol .col:before{display:none !important}
 .twocol .col{border-left:4px solid var(--blue) !important}
 .twocol .col:last-child{border-left:4px solid var(--sun) !important}
+.twocol .col,.twocol .col:last-child{border:1px solid var(--line) !important}
+.twocol .col:before{display:block !important;width:33.33% !important}
