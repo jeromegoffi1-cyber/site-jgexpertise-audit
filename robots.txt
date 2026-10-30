@@ -1,4 +1,8 @@
 User-agent: *
 Disallow: /merci.html
 
+User-agent: Googlebot-Image
+Disallow: /img/jerome-goffi.jpg
+Disallow: /img/apercu-site.png
+
 Sitemap: https://www.jgexpertise-audit.fr/sitemap.xml
