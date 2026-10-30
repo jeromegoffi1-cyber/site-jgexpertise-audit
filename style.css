@@ -424,3 +424,4 @@ footer .cols{grid-template-columns:2fr 1fr}
 .facts:before{width:100% !important}
 .domain .dhead:before{display:none !important}
 .domain .dhead h3:after{content:"";display:block;width:40px;height:3px;background:var(--sun);margin-top:12px}
+.fe .box{border:1px solid var(--line) !important}
