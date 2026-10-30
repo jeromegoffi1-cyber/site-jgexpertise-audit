@@ -395,3 +395,6 @@ footer .cols{grid-template-columns:2fr 1fr}
 .domain .dhead h3{margin:0}
 .domain .num{color:var(--ink) !important;font-family:Caslon,Georgia,serif !important;font-size:22px;font-weight:700;border-bottom:3px solid var(--sun);padding-bottom:1px;line-height:1.2;flex:none}
 @media (max-width:640px){.domain .num{font-size:18px}}
+/* petit accent orange au-dessus des titres d'expertise */
+.domain .dhead{display:block;margin-bottom:16px}
+.domain .dhead:before{content:"";display:block;width:32px;height:3px;background:var(--sun);margin-bottom:14px}
