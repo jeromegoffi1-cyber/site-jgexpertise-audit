@@ -314,3 +314,5 @@ footer .cols{grid-template-columns:2fr 1fr}
 /* fond gris : boutons blancs */
 .on-dark .btn:not(.btn-contact),.bg-ivory .btn:not(.btn-contact),.mission:nth-of-type(even) .btn:not(.btn-contact),.cta .btn:not(.btn-contact){background:#fff !important;color:var(--ink) !important;border:2px solid var(--ink) !important}
 .on-dark .btn:not(.btn-contact):hover,.bg-ivory .btn:not(.btn-contact):hover{background:var(--ink) !important;color:#fff !important}
+.pagehead .back{display:inline-block;font-size:16px;font-weight:600;color:var(--blue);text-decoration:none;margin-bottom:22px}
+.pagehead .back:hover{text-decoration:underline}
