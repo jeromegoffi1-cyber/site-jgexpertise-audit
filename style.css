@@ -378,3 +378,4 @@ footer .cols{grid-template-columns:2fr 1fr}
 .cardd,.twocol .col,.twocol .col:last-child,.fe .box{border:1px solid var(--line) !important}
 .fe .box{border-left:6px solid var(--sun) !important}
 @media (max-width:640px){.fe .box{border-left-width:5px !important}}
+.cardd,.twocol .col,.twocol .col:last-child{border-top:3px solid var(--ink) !important}
