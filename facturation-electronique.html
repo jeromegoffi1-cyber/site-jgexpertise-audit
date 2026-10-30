@@ -12,117 +12,77 @@
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="./"><b>JG Expertise &amp; Audit</b><small>Expert-comptable · Commissaire aux comptes</small></a>
-    <button class="burger" onclick="document.querySelector('.nav').classList.toggle('open')" aria-label="Menu">Menu</button>
+    <a class="brand" href="./">JG Expertise &amp; Audit</a>
     <nav class="nav">
-      <div class="dd"><a href="./#expertise" class="on">Expertise comptable</a>
-        <div class="menu">
-          <a href="gerer-votre-quotidien.html">Gérer votre quotidien</a>
-          <a href="developper-votre-activite.html">Développer votre activité</a>
-          <a href="construire-votre-patrimoine.html">Construire votre patrimoine</a>
-          <a href="facturation-electronique.html">Facturation électronique</a>
-        </div>
-      </div>
+      <a href="./#expertise">Expertise comptable</a>
       <a href="audit.html">Audit</a>
+      <a href="facturation-electronique.html">Facturation électronique</a>
       <a href="le-cabinet.html">Le cabinet</a>
-      <a href="actualites.html">Actualités</a>
-      <a class="nav-cta" href="contact.html">Contact</a>
+      <a href="./#actualites">Actualités</a>
+      <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
 <div class="pagehead">
   <div class="wrap">
-    <p class="kicker">Expertise comptable</p>
+    <p class="kicker">Facturation électronique</p>
     <h1>Facturation électronique</h1>
     <p>La réforme est entrée en vigueur le 1er septembre 2026. Toutes les entreprises sont concernées, à des dates différentes selon leur taille.</p>
+    <div class="anchors"><a href="#dates">Les dates</a><a href="#accompagnement">Accompagnement</a></div>
   </div>
-</div><section>
+</div><section class="block">
   <div class="wrap">
-    <h2 class="sec-title">Ce qui change</h2>
-    <div class="prose">
-      <p>Les factures entre entreprises assujetties à la TVA établies en France passent par une plateforme agréée par l'administration, dans un format électronique structuré. Un PDF envoyé par mail ne suffit plus.</p>
-      <p>Les ventes aux particuliers et les opérations avec l'étranger donnent lieu à une transmission de données à l'administration (e-reporting).</p>
-    </div>
+    <h2>Ce qui change</h2>
+    <p class="lead2">Les factures entre entreprises assujetties à la TVA établies en France passent par une plateforme agréée par l'administration, dans un format électronique structuré. Un PDF envoyé par mail ne suffit plus.</p>
+    <p class="lead2">Les ventes aux particuliers et les opérations avec l'étranger donnent lieu à une transmission de données à l'administration (e-reporting).</p>
   </div>
 </section>
-<section class="bg-ivory">
+<section class="block band" id="dates">
   <div class="wrap">
-    <h2 class="sec-title" style="margin-bottom:34px">Les dates</h2>
-    <div class="dates3">
+    <h2>Les dates</h2>
+    <div class="steps" style="grid-template-columns:repeat(3,1fr)">
       <div><b>1er septembre 2026</b>Réception obligatoire pour toutes les entreprises assujetties à la TVA</div>
       <div><b>1er septembre 2026</b>Émission obligatoire pour les grandes entreprises et les entreprises de taille intermédiaire</div>
       <div><b>1er septembre 2027</b>Émission obligatoire pour les PME et les micro-entreprises</div>
     </div>
   </div>
 </section>
-<section>
+<section class="block">
   <div class="wrap">
-    <h2 class="sec-title">En Martinique</h2>
-    <div class="prose">
-      <p>La réforme s'applique en Martinique, en Guadeloupe et à La Réunion comme en métropole. Les opérations avec la Guyane et Mayotte, où la TVA ne s'applique pas, relèvent de la transmission de données.</p>
-      <p>Les activités exonérées de TVA, comme les soins des professions de santé, n'ont pas à émettre de factures électroniques pour ces actes. Elles doivent en revanche pouvoir recevoir les factures électroniques de leurs fournisseurs.</p>
-    </div>
+    <h2>En Martinique</h2>
+    <p class="lead2">La réforme s'applique en Martinique, en Guadeloupe et à La Réunion comme en métropole. Les opérations avec la Guyane et Mayotte, où la TVA ne s'applique pas, relèvent de la transmission de données.</p>
+    <p class="lead2">Les activités exonérées de TVA, comme les soins des professions de santé, n'ont pas à émettre de factures électroniques pour ces actes. Elles doivent en revanche pouvoir recevoir les factures électroniques de leurs fournisseurs.</p>
   </div>
-</section><section class="mission">
+</section><section class="block" id="accompagnement">
   <div class="wrap">
-    <div>
-      <h2>Accompagnement</h2>
-      
-    </div>
-    <div>
-      <h3>Missions</h3>
-      <ul class="list"><li>Choix de la plateforme agréée</li><li>Paramétrage de votre facturation</li><li>Revue de vos clients et fournisseurs</li><li>Suivi après le passage à l'émission</li></ul>
-      <h3>Déroulement</h3>
-      <ol class="timeline"><li>Point sur votre situation</li><li>Choix de la solution</li><li>Mise en place</li><li>Suivi</li></ol>
-      
-    </div>
+    <h2>Accompagnement</h2>
+    
+    <ul class="checks"><li>Choix de la plateforme agréée</li><li>Paramétrage de votre facturation</li><li>Revue de vos clients et fournisseurs</li><li>Suivi après le passage à l'émission</li></ul>
+    <h3 class="h3small">Déroulement de la mission</h3>
+    <ol class="steps"><li><span>1</span>Point sur votre situation</li><li><span>2</span>Choix de la solution</li><li><span>3</span>Mise en place</li><li><span>4</span>Suivi</li></ol>
+    
   </div>
 </section>
 
-<section class="cta">
+<section class="contactband" id="contact">
   <div class="wrap">
-    <div>
-      <h2>Un projet, une question&nbsp;?</h2>
-      <p>Laissez vos coordonnées, je vous rappelle.</p>
-    </div>
-    <a class="btn" href="contact.html">Être recontacté</a>
+    <h2>Contact</h2>
+    <p><span>Téléphone</span><a href="tel:+596696880386">+596 696 88 03 86</a></p>
+    <p><span>Mail</span><a href="mailto:contact@jgexpertise-audit.fr">contact@jgexpertise-audit.fr</a></p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div class="cols">
-      <div>
-        <b class="fb">JG Expertise &amp; Audit</b>
-        <p>Expertise comptable, audit et conseil aux dirigeants, à Fort-de-France.</p>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <p><a href="tel:+596696880386">+596 696 88 03 86</a></p>
-        <p><a href="mailto:contact@jgexpertise-audit.fr">contact@jgexpertise-audit.fr</a></p>
-        <p>Fort-de-France, Martinique</p>
-      </div>
-      <div>
-        <h4>Le site</h4>
-        <p><a href="./#expertise">Expertise comptable</a></p>
-        <p><a href="audit.html">Audit</a></p>
-        <p><a href="le-cabinet.html">Le cabinet</a></p>
-        <p><a href="actualites.html">Actualités</a></p>
-        <p><a href="contact.html">Contact</a></p>
-      </div>
-    </div>
-    <div class="legal">
-      <span>© 2026 JG Expertise &amp; Audit · Jérôme Goffi, expert-comptable inscrit au tableau de l'Ordre (conseil régional de la Martinique) et commissaire aux comptes inscrit sur la liste de la Haute autorité de l'audit</span>
-      <a href="mentions-legales.html">Mentions légales</a>
-    </div>
+    <span>© 2026 JG Expertise &amp; Audit — Jérôme Goffi, expert-comptable (Ordre, conseil régional de la Martinique) et commissaire aux comptes, membre de la compagnie régionale des commissaires aux comptes de Fort-de-France</span>
+    <a href="mentions-legales.html">Mentions légales</a>
   </div>
 </footer>
 
