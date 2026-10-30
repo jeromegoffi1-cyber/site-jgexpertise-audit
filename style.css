@@ -304,3 +304,10 @@ footer .cols{grid-template-columns:2fr 1fr}
 .btn.btn-contact:hover{background:var(--blue-dk) !important;border-color:var(--blue-dk) !important}
 .hero .btn.btn-dark{background:var(--ink) !important;color:#fff !important;border-color:var(--ink) !important}
 .hero .btn.btn-dark:hover{background:#333 !important;border-color:#333 !important}
+/* autres boutons : noir plein ; accueil : Audit reste blanc */
+.btn,.fe .btn{background:var(--ink) !important;color:#fff !important;border:2px solid var(--ink) !important}
+.btn:hover,.fe .btn:hover{background:#333 !important;border-color:#333 !important;color:#fff !important}
+.hero .btn:not(.btn-dark):not(.btn-contact){background:#fff !important;color:var(--ink) !important;border:2px solid var(--ink) !important}
+.hero .btn:not(.btn-dark):not(.btn-contact):hover{background:var(--ink) !important;color:#fff !important}
+.btn.btn-contact{background:var(--blue) !important;border-color:var(--blue) !important;color:#fff !important}
+.btn.btn-contact:hover{background:var(--blue-dk) !important;border-color:var(--blue-dk) !important}
