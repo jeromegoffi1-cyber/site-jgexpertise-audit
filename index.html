@@ -26,7 +26,7 @@
 </script>
 <meta property="og:site_name" content="JG Expertise &amp; Audit">
 <link rel="preload" href="fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=1793374517">
+<link rel="stylesheet" href="style.css?v=1793374791">
 </head>
 <body>
 
@@ -144,10 +144,10 @@
   <div class="wrap">
     <div class="cols">
       <div>
-        <b class="fb">JG Expertise &amp; Audit</b>
+        <div class="fbrow"><b class="fb">JG Expertise &amp; Audit</b><img class="flogo" src="img/icon-192.png" alt="" width="36" height="36"></div>
         <p>Expertise comptable, audit et conseil aux dirigeants.</p>
         <p class="zone">Cabinet basé en Martinique. <span>Intervention en Guadeloupe, en Guyane et en France métropolitaine.</span></p>
-        <p class="fmail"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#106;&#103;&#101;&#120;&#112;&#101;&#114;&#116;&#105;&#115;&#101;&#45;&#97;&#117;&#100;&#105;&#116;&#46;&#102;&#114;">&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#106;&#103;&#101;&#120;&#112;&#101;&#114;&#116;&#105;&#115;&#101;&#45;&#97;&#117;&#100;&#105;&#116;&#46;&#102;&#114;</a><img class="flogo" src="img/icon-192.png" alt="" width="36" height="36"></p>
+        <p class="fmail"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#106;&#103;&#101;&#120;&#112;&#101;&#114;&#116;&#105;&#115;&#101;&#45;&#97;&#117;&#100;&#105;&#116;&#46;&#102;&#114;">&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#106;&#103;&#101;&#120;&#112;&#101;&#114;&#116;&#105;&#115;&#101;&#45;&#97;&#117;&#100;&#105;&#116;&#46;&#102;&#114;</a></p>
       </div>
       <div>
         <h4>Le site</h4>
@@ -174,12 +174,6 @@
   document.addEventListener('click',function(e){if(nav.classList.contains('open')&&!nav.contains(e.target)) fermer();});
   nav.addEventListener('click',function(e){if(e.target.closest('a')) fermer();});
   var y0=null; window.addEventListener('scroll',function(){if(!nav.classList.contains('open')){y0=null;return;} if(y0===null) y0=window.scrollY; if(Math.abs(window.scrollY-y0)>60) fermer();},{passive:true});
-})();
-(function(){
-  var fb=document.querySelector('footer b.fb'), fm=document.querySelector('footer .fmail');
-  if(!fb||!fm) return;
-  function cale(){var r=document.createRange();r.selectNodeContents(fb);var w=Math.ceil(r.getBoundingClientRect().width);fm.style.width='';var need=fm.scrollWidth;fm.style.width=Math.max(w,0)+'px';}
-  cale(); if(document.fonts&&document.fonts.ready) document.fonts.ready.then(cale); window.addEventListener('resize',cale);
 })();
 </script>
 

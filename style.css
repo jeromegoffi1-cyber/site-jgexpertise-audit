@@ -545,3 +545,9 @@ footer .flogo{outline:1px solid #5A5F6B;outline-offset:0}
 footer .fmail{justify-content:space-between;max-width:100%}
 @media (max-width:640px){footer .fmail{gap:8px !important}footer .flogo{width:32px;height:32px}}
 @media (max-width:640px){footer .fmail a{font-size:14px}}
+/* logo à droite du nom, en haut du pied de page */
+footer .fbrow{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+footer .fbrow b.fb{margin:0 !important}
+footer .fbrow .flogo{width:36px !important;height:36px !important}
+footer .fmail{width:auto !important}
+@media (max-width:640px){footer .fmail a{font-size:16px !important}}
