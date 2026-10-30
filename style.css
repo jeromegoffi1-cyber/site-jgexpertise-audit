@@ -473,3 +473,26 @@ footer .cols{grid-template-columns:2fr 1fr}
 @media (max-width:900px){.domains{gap:16px !important}.domain,.domain+.domain,.domain:last-child{padding:24px 22px !important}}
 /* dates de la facturation électronique en cadres distincts sur téléphone */
 @media (max-width:820px){.dates3{gap:14px}.dates3 div{background:#fff;border:1px solid var(--line);border-top:3px solid var(--ink);padding:16px 18px}}
+/* option C : bleu très pâle pour les blocs alternés + bouton Contact visible sur téléphone */
+:root{--ivory:#F2F5FD}
+.bg-g{background:#F2F5FD !important}
+.m-contact{display:none}
+@media (max-width:960px){
+  .topbar .wrap{gap:10px}
+  .brand{min-width:0;flex:1}
+  .brand b{white-space:nowrap}
+  .m-contact{display:inline-block;background:var(--blue);color:#fff;font-weight:600;font-size:14.5px;padding:9px 13px;text-decoration:none;border-radius:2px;flex:none}
+  .m-contact:hover{background:var(--blue-dk)}
+  .burger{flex:none}
+}
+@media (max-width:640px){
+  .brand b{font-size:17.5px !important}
+  .brand small{font-size:8.5px !important;letter-spacing:.9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .burger{padding:8px 10px;font-size:14.5px}
+}
+@media (max-width:640px){
+  .brand small{display:none !important}
+  .brand b{font-size:19px !important}
+  .m-contact{padding:8px 11px;font-size:14px}
+}
+@media (max-width:370px){.brand b{font-size:17px !important}.m-contact{padding:7px 9px}}
