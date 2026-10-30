@@ -390,3 +390,8 @@ footer .cols{grid-template-columns:2fr 1fr}
 .twocol .col:last-child{border-left:4px solid var(--sun) !important}
 .twocol .col,.twocol .col:last-child{border:1px solid var(--line) !important}
 .twocol .col:before{display:block !important;width:33.33% !important}
+/* numéros à côté des titres */
+.domain .dhead{display:flex;align-items:baseline;gap:14px;margin-bottom:16px}
+.domain .dhead h3{margin:0}
+.domain .num{color:var(--ink) !important;font-family:Caslon,Georgia,serif !important;font-size:22px;font-weight:700;border-bottom:3px solid var(--sun);padding-bottom:1px;line-height:1.2;flex:none}
+@media (max-width:640px){.domain .num{font-size:18px}}
