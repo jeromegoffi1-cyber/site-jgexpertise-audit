@@ -408,3 +408,11 @@ footer .cols{grid-template-columns:2fr 1fr}
 .list li:before,.checks li:before,.twocol .list li:before,.cardd li:before{background:var(--sun) !important}
 .twocol .col:before,.twocol .col:last-child:before{background:var(--sun) !important}
 .domain .num,.flow li:before{color:var(--ink) !important}
+/* orange avec parcimonie ; « La mission » en noir, « Pour vous » en orange */
+.more{text-decoration:none !important}
+.more:hover{color:var(--ink) !important;text-decoration:underline !important;text-decoration-color:var(--ink) !important;text-decoration-thickness:1px !important}
+.nav a.on,.nav>a:hover,.nav .dd>a:hover{border-bottom-color:var(--ink) !important}
+.list li:before,.checks li:before,.cardd li:before,.twocol .col:first-child .list li:before{background:var(--ink) !important}
+.twocol .col:first-child:before{background:var(--ink) !important}
+.twocol .col:last-child .list li:before,.twocol .col:last-child:before{background:var(--sun) !important}
+.dates3 div{border-top-color:var(--ink) !important}
