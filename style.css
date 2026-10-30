@@ -559,3 +559,5 @@ footer .fbrow{gap:38px}
 /* fond bleuté plus clair */
 :root{--ivory:#F7F9FE}
 .bg-g{background:#F7F9FE !important}
+/* le bandeau contact garde son orange pâle, quelle que soit l alternance */
+section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;border:0 !important}
