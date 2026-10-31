@@ -619,3 +619,16 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
 /* calendrier : flèche noire à la place du carré */
 .dates3 b:before{content:"→" !important;width:auto !important;height:auto !important;background:none !important;color:var(--ink);font-family:SourceSans,Arial,sans-serif;font-weight:700;font-size:.9em;line-height:1}
 .dates3 b:before{font-size:1.15em !important;margin-top:-2px}
+/* logo à gauche du nom dans la barre du haut */
+.brand{flex-direction:row !important;align-items:center;gap:10px}
+.brand .bt{display:flex;flex-direction:column}
+.brand .lg{width:40px;height:40px;flex:0 0 auto;display:block}
+@media (max-width:640px){.brand .lg{width:30px;height:30px}.brand{gap:8px}.brand b{font-size:16px !important;white-space:nowrap}}
+@media (max-width:640px){
+  .topbar .wrap{gap:8px}
+  .brand{min-width:0;flex:1 1 auto;overflow:hidden}
+  .brand b{font-size:clamp(12px,4.1vw,16px) !important}
+  .brand .lg{width:clamp(24px,7.5vw,30px);height:clamp(24px,7.5vw,30px)}
+  .burger{padding:7px 9px !important;font-size:14px !important;flex:0 0 auto}
+  .m-contact{padding:7px 10px !important;font-size:14px !important;flex:0 0 auto}
+}
