@@ -580,3 +580,8 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
 /* audit : 2 blocs comme l'expertise comptable */
 .domains.domains2{grid-template-columns:repeat(2,1fr)}
 @media (max-width:900px){.domains.domains2{grid-template-columns:1fr}}
+/* petits titres : pas de doublon sous le lien de retour, sinon orange avec de l'air */
+.pagehead .back ~ .kicker{display:none !important}
+.pagehead .back{display:inline-flex;gap:8px;font-size:14px;color:#6B7280;margin-bottom:22px}
+.kicker{color:#E07A10 !important;font-size:13px !important;letter-spacing:2.5px !important;margin:0 0 18px !important}
+.pagehead .kicker,.on-dark .kicker,section .kicker,div .kicker{color:#E07A10 !important}
