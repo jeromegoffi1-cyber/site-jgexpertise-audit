@@ -678,3 +678,8 @@ footer .fname{margin:0 !important;font-family:'Source Serif',Georgia,serif;font-
 footer .fname::after{content:"";display:block;width:36px;height:2px;background:#F08C1E;margin:14px 0 12px}
 footer .ftag2{margin:0 !important;font-size:15px;line-height:1.5;color:#C9CDD6;letter-spacing:.01em}
 @media (max-width:640px){footer .fname{font-size:24px}footer .ftag2{font-size:14px}footer .fbrand{margin-bottom:22px;padding-bottom:18px}}
+/* footer brand v3 : police du bandeau du haut, aucun trait */
+footer .fbrand{border-bottom:0 !important;padding-bottom:0 !important;margin-bottom:22px !important}
+footer .fname{font-family:Caslon,Cambria,Georgia,serif !important;font-weight:700 !important;letter-spacing:-.2px !important}
+footer .fname::after{content:none !important;display:none !important}
+footer .ftag2{margin-top:8px !important;font-family:SourceSans,Calibri,"Segoe UI",Arial,sans-serif}
