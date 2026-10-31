@@ -690,3 +690,11 @@ footer .fbrand{border-bottom:1px solid rgba(255,255,255,.12) !important;padding-
 footer .fname{font-size:22px !important;line-height:1.2 !important}
 footer .ftag2{font-size:14px !important;margin-top:6px !important}
 @media (max-width:640px){footer .fname{font-size:18px !important}footer .ftag2{font-size:12.5px !important;margin-top:5px !important}footer .fbrand{padding-bottom:16px !important;margin-bottom:20px !important}}
+/* menu mobile : fin nette + voile sur la page */
+@media (max-width:960px){
+  .nav.open{padding-bottom:12px !important;border-bottom:1px solid var(--line) !important;box-shadow:none !important}
+  .nav.open::after{content:"";position:absolute;top:calc(100% + 1px);left:0;right:0;height:100vh;background:rgba(26,26,26,.45);pointer-events:none}
+  .nav>a:nth-last-child(2){border-bottom:none !important}
+  .nav .dd>a{border-bottom:1px solid var(--line) !important}
+}
+@media (hover:none){.nav>a:hover,.nav .dd>a:hover{background:transparent !important}.nav a.on{background:#ECEEF1 !important}}
