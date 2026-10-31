@@ -588,3 +588,4 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
 /* petits titres : orange seulement en haut de l'accueil, Expertise comptable et Audit ; noir ailleurs */
 .kicker,.pagehead .kicker,.on-dark .kicker,section .kicker,div .kicker{color:#1A1A1A !important}
 .hero .kicker,#expertise .kicker,#audit .kicker{color:#E07A10 !important}
+#expertise .kicker,#audit .kicker{color:#1A1A1A !important}
