@@ -569,3 +569,11 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
 .cta .cs{display:block !important;margin:0 0 26px;color:#555;font-size:18px}
 @media (max-width:640px){.cta h2{font-size:26px !important}.cta .cs{font-size:17px}.cta .ck{font-size:14px}}
 .hero .kicker{color:#E07A10 !important}
+/* téléphone : sous-menu Expertise comptable fermé par défaut */
+@media (max-width:960px){
+  .nav .dd .menu{display:none !important}
+  .nav .dd.open .menu{display:block !important}
+  .nav .dd>a{position:relative}
+  .nav .dd>a:after{content:"";position:absolute;right:16px;top:50%;width:8px;height:8px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:translateY(-70%) rotate(45deg);transition:transform .15s}
+  .nav .dd.open>a:after{transform:translateY(-30%) rotate(-135deg)}
+}
