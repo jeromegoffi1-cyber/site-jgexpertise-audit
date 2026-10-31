@@ -663,3 +663,12 @@ footer .legal .lg{line-height:1.5}
   .brand{gap:10px !important}
   .brand b{font-size:clamp(12px,4.2vw,17px) !important}
 }
+/* barre du haut téléphone : icône menu, sous-titre, bouton contact bleu avec enveloppe */
+@media (max-width:640px){
+  .burger{font-size:0 !important;width:40px;height:40px;padding:0 !important;border:0 !important;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='14' viewBox='0 0 20 14'%3E%3Cpath d='M0 1h20M0 7h20M0 13h20' stroke='%231A1A1A' stroke-width='2'/%3E%3C/svg%3E") no-repeat center !important}
+  .m-contact{font-size:0 !important;width:40px;height:40px;padding:0 !important;display:block !important;background:#2251FF url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='16' viewBox='0 0 24 18' fill='none' stroke='white' stroke-width='2'%3E%3Crect x='1' y='1' width='22' height='16' rx='1'/%3E%3Cpath d='M1 2l11 8 11-8'/%3E%3C/svg%3E") no-repeat center !important}
+  .brand .bt small{display:block !important;font-size:clamp(7.5px,2.25vw,9.5px) !important;letter-spacing:.3px !important;white-space:nowrap;margin-top:3px}
+  .brand b{font-size:clamp(14px,4.8vw,19px) !important}
+  .brand .lg{width:40px !important;height:40px !important}
+}
+@media (max-width:379px){.brand .bt small{display:none !important}}
