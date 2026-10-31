@@ -20,7 +20,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:site_name" content="JG Expertise &amp; Audit">
 <link rel="preload" href="fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=1793406514">
+<link rel="stylesheet" href="style.css?v=1793406898">
 </head>
 <body>
 
@@ -107,10 +107,14 @@
 (function(){
   var nav=document.querySelector('.nav'), bt=document.querySelector('.burger');
   if(!nav||!bt) return;
-  function fermer(){nav.classList.remove('open');bt.setAttribute('aria-expanded','false');}
+  function fermer(){nav.classList.remove('open');bt.setAttribute('aria-expanded','false');var d=nav.querySelector('.dd');if(d)d.classList.remove('open');}
   bt.addEventListener('click',function(e){e.stopPropagation();var o=nav.classList.toggle('open');bt.setAttribute('aria-expanded',o?'true':'false');});
   document.addEventListener('click',function(e){if(nav.classList.contains('open')&&!nav.contains(e.target)) fermer();});
-  nav.addEventListener('click',function(e){if(e.target.closest('a')) fermer();});
+  var dd=nav.querySelector('.dd'), dda=dd&&dd.querySelector(':scope>a');
+  function mobile(){return getComputedStyle(bt).display!=='none';}
+  if(dda) dda.addEventListener('click',function(e){if(!mobile())return;e.preventDefault();e.stopPropagation();dd.classList.toggle('open');});
+  function fermer2(){fermer();if(dd)dd.classList.remove('open');}
+  nav.addEventListener('click',function(e){var a=e.target.closest('a');if(a&&a!==dda) fermer2();});
   var y0=null; window.addEventListener('scroll',function(){if(!nav.classList.contains('open')){y0=null;return;} if(y0===null) y0=window.scrollY; if(Math.abs(window.scrollY-y0)>60) fermer();},{passive:true});
 })();
 </script>
