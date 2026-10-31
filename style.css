@@ -596,3 +596,7 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
 .hero .kicker:before{display:none}
 /* règle : petit titre + carré uniquement sur les rubriques de l accueil ; jamais en tête de page */
 .pagehead .kicker{display:none !important}
+/* Le cabinet : titre et photo dans le même bloc blanc */
+.pagehead:has(+ .cab-suite){border-bottom:0 !important;padding-bottom:10px !important}
+.cab-suite{background:#fff;padding:20px 0 80px}
+@media (max-width:900px){.cab-suite{padding:10px 0 56px}}
