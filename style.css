@@ -683,3 +683,6 @@ footer .fbrand{border-bottom:0 !important;padding-bottom:0 !important;margin-bot
 footer .fname{font-family:Caslon,Cambria,Georgia,serif !important;font-weight:700 !important;letter-spacing:-.2px !important}
 footer .fname::after{content:none !important;display:none !important}
 footer .ftag2{margin-top:8px !important;font-family:SourceSans,Calibri,"Segoe UI",Arial,sans-serif}
+/* footer brand v4 : ligne grise rétablie */
+footer .fbrand{border-bottom:1px solid rgba(255,255,255,.12) !important;padding-bottom:22px !important;margin-bottom:26px !important}
+@media (max-width:640px){footer .fbrand{padding-bottom:18px !important;margin-bottom:22px !important}}
