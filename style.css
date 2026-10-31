@@ -648,3 +648,6 @@ footer .fbrow .flogo{width:48px !important;height:48px !important;outline:1px so
 /* bas de page : nom à la même taille que dans la barre du haut */
 footer .fbrow b.fb{font-size:26px !important}
 @media (max-width:640px){footer .fbrow b.fb{font-size:14.5px !important}}
+/* bas de page : phrase à côté du logo */
+footer .fbrow{align-items:center;margin-bottom:22px !important}
+footer .ftag{margin:0 !important;color:#E4E6EB;line-height:1.4}
