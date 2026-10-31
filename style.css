@@ -638,3 +638,6 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
   .brand b{font-size:clamp(11px,3.6vw,14.5px) !important}
 }
 @media (min-width:641px){.brand{gap:16px !important}}
+/* logo plus grand dans la barre du haut */
+.brand .lg{width:48px !important;height:48px !important}
+@media (max-width:640px){.brand .lg{width:clamp(32px,10vw,40px) !important;height:clamp(32px,10vw,40px) !important}}
