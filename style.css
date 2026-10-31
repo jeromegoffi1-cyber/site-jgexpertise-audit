@@ -637,3 +637,4 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
   .brand{gap:12px !important}
   .brand b{font-size:clamp(11px,3.6vw,14.5px) !important}
 }
+@media (min-width:641px){.brand{gap:16px !important}}
