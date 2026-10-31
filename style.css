@@ -672,3 +672,9 @@ footer .legal .lg{line-height:1.5}
   .brand .lg{width:40px !important;height:40px !important}
 }
 @media (max-width:379px){.brand .bt small{display:none !important}}
+/* footer brand v2 */
+footer .fbrand{margin:0 0 26px;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.12);max-width:520px}
+footer .fname{margin:0 !important;font-family:'Source Serif',Georgia,serif;font-weight:600;font-size:28px;line-height:1.15;color:#fff;letter-spacing:-.01em}
+footer .fname::after{content:"";display:block;width:36px;height:2px;background:#F08C1E;margin:14px 0 12px}
+footer .ftag2{margin:0 !important;font-size:15px;line-height:1.5;color:#C9CDD6;letter-spacing:.01em}
+@media (max-width:640px){footer .fname{font-size:24px}footer .ftag2{font-size:14px}footer .fbrand{margin-bottom:22px;padding-bottom:18px}}
