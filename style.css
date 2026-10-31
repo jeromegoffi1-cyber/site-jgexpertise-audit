@@ -585,3 +585,6 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
 .pagehead .back{display:inline-flex;gap:8px;font-size:14px;color:#6B7280;margin-bottom:22px}
 .kicker{color:#E07A10 !important;font-size:13px !important;letter-spacing:2.5px !important;margin:0 0 18px !important}
 .pagehead .kicker,.on-dark .kicker,section .kicker,div .kicker{color:#E07A10 !important}
+/* petits titres : orange seulement en haut de l'accueil, Expertise comptable et Audit ; noir ailleurs */
+.kicker,.pagehead .kicker,.on-dark .kicker,section .kicker,div .kicker{color:#1A1A1A !important}
+.hero .kicker,#expertise .kicker,#audit .kicker{color:#E07A10 !important}
