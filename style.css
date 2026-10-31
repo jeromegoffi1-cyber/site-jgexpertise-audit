@@ -641,3 +641,7 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
 /* logo plus grand dans la barre du haut */
 .brand .lg{width:48px !important;height:48px !important}
 @media (max-width:640px){.brand .lg{width:clamp(32px,10vw,40px) !important;height:clamp(32px,10vw,40px) !important}}
+/* bas de page : logo à gauche du nom, comme en haut */
+footer .fbrow{gap:16px !important}
+footer .fbrow .flogo{width:48px !important;height:48px !important;outline:1px solid #5A5F6B}
+@media (max-width:640px){footer .fbrow{gap:12px !important}footer .fbrow .flogo{width:40px !important;height:40px !important}}
