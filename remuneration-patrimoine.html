@@ -20,7 +20,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:site_name" content="JG Expertise &amp; Audit">
 <link rel="preload" href="fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=1793449532">
+<link rel="stylesheet" href="style.css?v=1793485857">
 </head>
 <body>
 
@@ -36,6 +36,15 @@
           <a href="comptabilite-fiscalite.html">Comptabilité et fiscalité</a>
           <a href="pilotage-financement.html">Pilotage et financement</a>
           <a href="remuneration-patrimoine.html">Rémunération et patrimoine</a>
+        </div>
+      </div>
+      <div class="dd"><a href="./#sante">Professions de santé</a>
+        <div class="menu">
+          <a href="sante-installation.html">S'installer en libéral</a>
+          <a href="sante-societe.html">Passer en société</a>
+          <a href="sante-holding.html">Créer une holding</a>
+          <a href="sante-patientele.html">Patientèle</a>
+          <a href="sante-retraite-prevoyance.html">Retraite et prévoyance</a>
         </div>
       </div>
       <div class="dd"><a href="./#audit">Audit</a>
@@ -55,7 +64,7 @@
     <a class="back" href="./#expertise">← Expertise comptable</a>
     <p class="kicker">Expertise comptable</p>
     <h1>Rémunération et patrimoine</h1>
-    <p>Votre rémunération, la structure de votre activité et la transmission de votre entreprise engagent votre patrimoine et celui de vos proches. Le cabinet étudie les options avec vous et en chiffre les conséquences avant que vous décidiez.</p>
+    <p>Votre rémunération, la structure de votre activité et la transmission de votre entreprise engagent votre patrimoine et celui de vos proches. Le cabinet étudie les options avec vous et en chiffre les conséquences.</p>
   </div>
 </div>
 <section class="bg-g mission">
@@ -78,7 +87,7 @@
 <section class="bg-w mission">
   <div class="wrap">
     <h2>Passage en société</h2>
-    <p class="lead">La bonne structure au bon moment : société d'exercice libéral, holding ou société civile immobilière.</p>
+    <p class="lead">La structure adaptée à votre activité : société d'exercice libéral, holding ou société civile immobilière.</p>
     <div class="twocol">
       <div class="col">
         <h3 class="lbl">La mission</h3>
@@ -86,7 +95,7 @@
       </div>
       <div class="col">
         <h3 class="lbl">Pour vous</h3>
-        <ul class="list gain"><li>Une structure adaptée à votre projet</li><li>Un patrimoine personnel mieux protégé</li><li>Des options chiffrées avant de décider</li><li>Une organisation prête pour la suite</li></ul>
+        <ul class="list gain"><li>Une structure adaptée à votre projet</li><li>Un patrimoine personnel mieux protégé</li><li>Des options chiffrées et comparées</li><li>Une organisation qui facilite l'arrivée d'un associé</li></ul>
       </div>
     </div>
     
@@ -103,7 +112,7 @@
       </div>
       <div class="col">
         <h3 class="lbl">Pour vous</h3>
-        <ul class="list gain"><li>Une valeur d'entreprise étayée</li><li>Une fiscalité anticipée</li><li>Une négociation mieux préparée</li><li>Une transmission sereine</li></ul>
+        <ul class="list gain"><li>Une valeur d'entreprise étayée</li><li>Une fiscalité anticipée</li><li>Une négociation mieux préparée</li><li>Une transmission préparée à l'avance</li></ul>
       </div>
     </div>
     
@@ -129,6 +138,7 @@
         <h4>Le site</h4>
         <p><a href="./">Accueil</a></p>
         <p><a href="./#expertise">Expertise comptable</a></p>
+        <p><a href="./#sante">Professions de santé</a></p>
         <p><a href="./#audit">Audit</a></p>
         <p><a href="le-cabinet.html">Le cabinet</a></p>
         <p><a href="actualites.html">Actualités</a></p>
@@ -143,6 +153,8 @@
 </footer>
 
 <script>
+(function(){if(location.hash)return;try{var n=performance.getEntriesByType('navigation')[0];if(n&&n.type==='back_forward')return;}catch(e){}window.scrollTo(0,0);document.documentElement.scrollTop=0;})();
+(function(){function go(h,sm){var t=h&&document.getElementById(h.slice(1));if(!t)return false;var k=t.querySelector('.kicker')||t;var tb=document.querySelector('.topbar');var off=(tb?tb.getBoundingClientRect().height:0)+28;window.scrollTo({top:k.getBoundingClientRect().top+window.scrollY-off,behavior:sm?'smooth':'auto'});return true;}document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var u=new URL(a.href,location.href);if(u.pathname!==location.pathname||!u.hash)return;if(go(u.hash,true)){e.preventDefault();history.replaceState(null,'',u.hash);}});window.addEventListener('load',function(){if(location.hash)setTimeout(function(){go(location.hash,false);},60);});})();
 (function(){var br=document.querySelector('.brand'),b=br&&br.querySelector('b');if(!b)return;
 function fit(){b.style.fontSize='';var fs=parseFloat(getComputedStyle(b).fontSize),n=0;while(br.scrollWidth>br.clientWidth+1&&fs>10&&n<40){fs-=0.5;b.style.setProperty('font-size',fs+'px','important');n++;}}
 fit();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);window.addEventListener('resize',fit);})();
