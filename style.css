@@ -651,3 +651,9 @@ footer .fbrow b.fb{font-size:26px !important}
 /* bas de page : phrase à côté du logo */
 footer .fbrow{align-items:center;margin-bottom:22px !important}
 footer .ftag{margin:0 !important;color:#E4E6EB;line-height:1.4}
+/* mentions du bas : une seule phrase, une ligne sur ordinateur */
+footer .legal{align-items:center}
+footer .legal .lg{line-height:1.5}
+@media (max-width:640px){footer .legal .lg{font-size:12.5px}}
+/* phrase à côté du logo : une ligne sur téléphone */
+@media (max-width:640px){footer .ftag{font-size:clamp(11px,3.4vw,14px);white-space:nowrap}}
