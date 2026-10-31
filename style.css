@@ -568,3 +568,4 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
 .cta h2{font-family:SourceSans,Calibri,'Segoe UI',Arial,sans-serif !important;font-weight:700;font-size:32px !important;letter-spacing:-.3px;margin:0 0 10px !important}
 .cta .cs{display:block !important;margin:0 0 26px;color:#555;font-size:18px}
 @media (max-width:640px){.cta h2{font-size:26px !important}.cta .cs{font-size:17px}.cta .ck{font-size:14px}}
+.hero .kicker{color:#E07A10 !important}
