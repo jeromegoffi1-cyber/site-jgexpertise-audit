@@ -657,3 +657,9 @@ footer .legal .lg{line-height:1.5}
 @media (max-width:640px){footer .legal .lg{font-size:12.5px}}
 /* phrase à côté du logo : une ligne sur téléphone */
 @media (max-width:640px){footer .ftag{font-size:clamp(11px,3.4vw,14px);white-space:nowrap}}
+/* téléphone : logo un peu plus petit, nom un peu plus grand */
+@media (max-width:640px){
+  .brand .lg{width:clamp(28px,8.5vw,34px) !important;height:clamp(28px,8.5vw,34px) !important}
+  .brand{gap:10px !important}
+  .brand b{font-size:clamp(12px,4.2vw,17px) !important}
+}
