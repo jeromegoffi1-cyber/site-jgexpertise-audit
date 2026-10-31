@@ -608,3 +608,4 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
 .dates3 b:after{content:"";display:block;width:40px;height:3px;background:var(--sun);margin:10px 0 4px}
 /* articles : aucun accent orange, tout en noir */
 .art-suite .dates3 b:after,.art-suite .col:before,.art-suite li:before{background:var(--ink) !important}
+.art-suite .twocol .col:last-child:before,.art-suite .twocol .col:last-child .list li:before,.art-suite .twocol .list.gain li:before{background:var(--ink) !important}
