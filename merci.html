@@ -20,7 +20,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:site_name" content="JG Expertise &amp; Audit">
 <link rel="preload" href="fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=1793406898">
+<link rel="stylesheet" href="style.css?v=1793408101">
 </head>
 <body>
 
@@ -37,7 +37,12 @@
           <a href="remuneration-patrimoine.html">Rémunération et patrimoine</a>
         </div>
       </div>
-      <a href="audit.html">Audit</a>
+      <div class="dd"><a href="./#audit">Audit</a>
+        <div class="menu">
+          <a href="audit-legal.html">Audit légal</a>
+          <a href="audit-contractuel.html">Audit contractuel</a>
+        </div>
+      </div>
       <a href="le-cabinet.html">Le cabinet</a>
       <a href="actualites.html">Actualités</a>
       <a class="nav-cta" href="contact.html">Contact</a>
@@ -68,7 +73,7 @@
       <div>
         <h4>Le site</h4>
         <p><a href="./#expertise">Expertise comptable</a></p>
-        <p><a href="audit.html">Audit</a></p>
+        <p><a href="./#audit">Audit</a></p>
         <p><a href="le-cabinet.html">Le cabinet</a></p>
         <p><a href="actualites.html">Actualités</a></p>
         <p><a href="contact.html">Contact</a></p>
@@ -85,14 +90,13 @@
 (function(){
   var nav=document.querySelector('.nav'), bt=document.querySelector('.burger');
   if(!nav||!bt) return;
-  function fermer(){nav.classList.remove('open');bt.setAttribute('aria-expanded','false');var d=nav.querySelector('.dd');if(d)d.classList.remove('open');}
+  function fermer(){nav.classList.remove('open');bt.setAttribute('aria-expanded','false');[].forEach.call(nav.querySelectorAll('.dd'),function(d){d.classList.remove('open');});}
   bt.addEventListener('click',function(e){e.stopPropagation();var o=nav.classList.toggle('open');bt.setAttribute('aria-expanded',o?'true':'false');});
   document.addEventListener('click',function(e){if(nav.classList.contains('open')&&!nav.contains(e.target)) fermer();});
-  var dd=nav.querySelector('.dd'), dda=dd&&dd.querySelector(':scope>a');
+  var dds=[].slice.call(nav.querySelectorAll('.dd'));
   function mobile(){return getComputedStyle(bt).display!=='none';}
-  if(dda) dda.addEventListener('click',function(e){if(!mobile())return;e.preventDefault();e.stopPropagation();dd.classList.toggle('open');});
-  function fermer2(){fermer();if(dd)dd.classList.remove('open');}
-  nav.addEventListener('click',function(e){var a=e.target.closest('a');if(a&&a!==dda) fermer2();});
+  dds.forEach(function(dd){var a=dd.querySelector(':scope>a');a.addEventListener('click',function(e){if(!mobile())return;e.preventDefault();e.stopPropagation();var o=dd.classList.contains('open');dds.forEach(function(x){x.classList.remove('open');});if(!o)dd.classList.add('open');});});
+  nav.addEventListener('click',function(e){var a=e.target.closest('a');if(a&&!a.parentNode.classList.contains('dd')) fermer();});
   var y0=null; window.addEventListener('scroll',function(){if(!nav.classList.contains('open')){y0=null;return;} if(y0===null) y0=window.scrollY; if(Math.abs(window.scrollY-y0)>60) fermer();},{passive:true});
 })();
 </script>
