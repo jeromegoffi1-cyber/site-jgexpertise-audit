@@ -686,3 +686,7 @@ footer .ftag2{margin-top:8px !important;font-family:SourceSans,Calibri,"Segoe UI
 /* footer brand v4 : ligne grise rétablie */
 footer .fbrand{border-bottom:1px solid rgba(255,255,255,.12) !important;padding-bottom:22px !important;margin-bottom:26px !important}
 @media (max-width:640px){footer .fbrand{padding-bottom:18px !important;margin-bottom:22px !important}}
+/* footer brand v5 : tailles réduites */
+footer .fname{font-size:22px !important;line-height:1.2 !important}
+footer .ftag2{font-size:14px !important;margin-top:6px !important}
+@media (max-width:640px){footer .fname{font-size:18px !important}footer .ftag2{font-size:12.5px !important;margin-top:5px !important}footer .fbrand{padding-bottom:16px !important;margin-bottom:20px !important}}
