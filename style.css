@@ -608,3 +608,7 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
 .dates3 b:after{content:"";display:block;width:40px;height:3px;background:var(--sun);margin:10px 0 4px}
 /* articles : aucun accent orange, tout en noir */
 .art-suite .dates3 b:after{background:var(--ink) !important}
+/* calendrier : petit carré noir à côté de la date, sans trait */
+.dates3 b:after{display:none !important}
+.dates3 b{display:flex !important;align-items:center;gap:10px}
+.dates3 b:before{content:"";width:9px;height:9px;background:var(--ink);flex:0 0 auto}
