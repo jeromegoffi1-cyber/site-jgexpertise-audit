@@ -20,13 +20,13 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:site_name" content="JG Expertise &amp; Audit">
 <link rel="preload" href="fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=1793412358">
+<link rel="stylesheet" href="style.css?v=1793440333">
 </head>
 <body>
 
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="./"><b>JG Expertise &amp; Audit</b><small>Expert-comptable · Commissaire aux comptes</small></a>
+    <a class="brand" href="./"><img class="lg" src="img/icon-192.png" alt="" width="40" height="40"><span class="bt"><b>JG Expertise &amp; Audit</b><small>Expert-comptable · Commissaire aux comptes</small></span></a>
     <a class="m-contact" href="contact.html">Contact</a>
     <button class="burger" aria-label="Menu" aria-expanded="false">Menu</button>
     <nav class="nav">
@@ -104,6 +104,9 @@
 </footer>
 
 <script>
+(function(){var br=document.querySelector('.brand'),b=br&&br.querySelector('b');if(!b)return;
+function fit(){b.style.fontSize='';var fs=parseFloat(getComputedStyle(b).fontSize),n=0;while(br.scrollWidth>br.clientWidth+1&&fs>10&&n<40){fs-=0.5;b.style.setProperty('font-size',fs+'px','important');n++;}}
+fit();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);window.addEventListener('resize',fit);})();
 (function(){
   var nav=document.querySelector('.nav'), bt=document.querySelector('.burger');
   if(!nav||!bt) return;
