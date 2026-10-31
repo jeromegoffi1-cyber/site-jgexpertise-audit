@@ -645,3 +645,6 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
 footer .fbrow{gap:16px !important}
 footer .fbrow .flogo{width:48px !important;height:48px !important;outline:1px solid #5A5F6B}
 @media (max-width:640px){footer .fbrow{gap:12px !important}footer .fbrow .flogo{width:40px !important;height:40px !important}}
+/* bas de page : nom à la même taille que dans la barre du haut */
+footer .fbrow b.fb{font-size:26px !important}
+@media (max-width:640px){footer .fbrow b.fb{font-size:14.5px !important}}
