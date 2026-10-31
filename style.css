@@ -606,3 +606,5 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
 /* calendrier : cadre fin, petit trait orange sous la date (comme les autres cadres) */
 .dates3 div{background:#fff !important;border:1px solid var(--line) !important;padding:20px 22px !important}
 .dates3 b:after{content:"";display:block;width:40px;height:3px;background:var(--sun);margin:10px 0 4px}
+/* articles : aucun accent orange, tout en noir */
+.art-suite .dates3 b:after,.art-suite .col:before,.art-suite li:before{background:var(--ink) !important}
