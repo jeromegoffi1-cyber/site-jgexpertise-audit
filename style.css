@@ -632,3 +632,8 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
   .burger{padding:7px 9px !important;font-size:14px !important;flex:0 0 auto}
   .m-contact{padding:7px 10px !important;font-size:14px !important;flex:0 0 auto}
 }
+/* téléphone : nom un peu plus petit, plus d'espace autour du logo */
+@media (max-width:640px){
+  .brand{gap:12px !important}
+  .brand b{font-size:clamp(11px,3.6vw,14.5px) !important}
+}
