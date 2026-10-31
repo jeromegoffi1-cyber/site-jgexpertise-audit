@@ -612,3 +612,7 @@ section.cta,section.cta.bg-g,section.cta.bg-w{background:#FDEEDC !important;bord
 .dates3 b:after{display:none !important}
 .dates3 b{display:flex !important;align-items:center;gap:10px}
 .dates3 b:before{content:"";width:9px;height:9px;background:var(--ink);flex:0 0 auto}
+/* titres des missions : petit carré noir devant */
+.mission .wrap>h2{display:flex;align-items:center;gap:14px}
+.mission .wrap>h2:before{content:"";width:11px;height:11px;background:var(--ink);flex:0 0 auto}
+@media (max-width:640px){.mission .wrap>h2{gap:11px}.mission .wrap>h2:before{width:9px;height:9px}}
