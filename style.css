@@ -764,3 +764,7 @@ footer .ftag2{font-size:14px !important;margin-top:6px !important}
 .fe .box{position:relative;overflow:hidden;padding-right:44% !important}
 .fe-photo{position:absolute;top:0;right:0;bottom:0;width:40%;background-size:cover;background-position:60% center;background-color:#171717}
 @media (max-width:640px){.fe .box{padding-right:20px !important;padding-top:200px !important}.fe-photo{width:100%;height:180px;bottom:auto}}
+/* photo de l'accueil sur téléphone : entre l'accroche et la phrase d'implantation */
+.hero .photo-m{display:none}
+@media (max-width:900px){.hero .photo-m{display:block;margin:6px 0 26px}.hero .photo:not(.photo-m){display:none}}
+@media (max-width:900px){.hero .photo.photo-m{padding:0;margin:4px 0 26px}}
