@@ -768,3 +768,6 @@ footer .ftag2{font-size:14px !important;margin-top:6px !important}
 .hero .photo-m{display:none}
 @media (max-width:900px){.hero .photo-m{display:block;margin:6px 0 26px}.hero .photo:not(.photo-m){display:none}}
 @media (max-width:900px){.hero .photo.photo-m{padding:0;margin:4px 0 26px}}
+.pagehead .pg-photo{margin:28px 0 0}
+@media (max-width:640px){.pagehead .pg-photo{margin:20px 0 0}}
+.pagehead .pg-photo{height:auto;aspect-ratio:3/2;max-width:760px;background-size:cover;background-position:center}
