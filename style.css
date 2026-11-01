@@ -749,4 +749,12 @@ footer .ftag2{font-size:14px !important;margin-top:6px !important}
   .nav.open::after{content:"";position:absolute;top:calc(100% + 1px);left:0;right:0;height:100vh;background:rgba(26,26,26,.45);pointer-events:none}
   .nav>a:nth-last-child(2){border-bottom:none !important}
   .nav .dd>a{border-bottom:1px solid var(--line) !important}
-}
+}/* encarts mis en avant : fond noir (01/11/2026) */
+.fe .box,.linkcard{background:#1A1A1A !important;border:none !important;color:#fff !important}
+.fe .box h2,.fe .box p,.linkcard .lc-t{color:#fff !important}
+.fe .box p{color:#C9CDD6 !important}
+.fe .tag,.linkcard .lc-lbl{color:#F08C1E !important}
+.fe .btn{background:#fff !important;color:#1A1A1A !important;border:2px solid #fff !important}
+.fe .btn:hover{background:transparent !important;color:#fff !important}
+.linkcard .lc-arrow{border-color:#fff !important;color:#fff !important}
+.linkcard:hover .lc-arrow{background:#fff;color:#1A1A1A !important}
