@@ -930,3 +930,9 @@ footer .cols p a{white-space:normal}
  .domains.domains2{grid-template-columns:repeat(3,1fr) !important}
  .domains:has(>.domain:nth-child(5):last-child)>.domain:nth-child(4){grid-column:1 / span 2 !important}
 }
+/* Accueil, Actualités sur ordinateur : grande photo sous le titre, alignée à gauche */
+@media (min-width:1101px){
+ .wrap:has(>.news):has(>.sec-photo){grid-template-columns:440px minmax(0,1fr) !important;grid-template-rows:none !important}
+ .wrap:has(>.news)>.kicker,.wrap:has(>.news)>.sec-title{grid-column:1 / -1 !important}
+ .wrap:has(>.news)>.sec-photo{grid-column:1 / -1 !important;grid-row:auto !important;justify-self:start !important;width:760px !important;max-width:100%;aspect-ratio:2/1 !important;margin:0 0 48px !important}
+}
