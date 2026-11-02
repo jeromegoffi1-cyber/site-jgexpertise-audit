@@ -905,5 +905,5 @@ h2[id]{scroll-margin-top:110px}
 @media (max-width:640px){
  .cab-suite{padding-top:10px !important}
  .cab-suite .portrait{margin:0 0 8px !important}
- .cab-suite .portrait img{aspect-ratio:3/2 !important;object-position:center 18% !important}
+ .cab-suite .portrait img{aspect-ratio:4/5 !important;object-position:center 22% !important}
 }
