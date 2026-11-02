@@ -936,3 +936,14 @@ footer .cols p a{white-space:normal}
  .wrap:has(>.news)>.kicker,.wrap:has(>.news)>.sec-title{grid-column:1 / -1 !important}
  .wrap:has(>.news)>.sec-photo{grid-column:1 / -1 !important;grid-row:auto !important;justify-self:start !important;width:760px !important;max-width:100%;aspect-ratio:2/1 !important;margin:0 0 48px !important}
 }
+/* Accueil, Le cabinet : photo sous le titre (même taille que Actualités sur ordinateur), puis tout le reste en dessous */
+#cabinet .cab-photo{background-size:cover;background-position:center;aspect-ratio:3/2;width:100%;margin:20px 0 30px}
+@media (min-width:641px) and (max-width:1100px){#cabinet .cab-photo{aspect-ratio:2/1}}
+@media (min-width:1101px){
+ #cabinet .wrap.split,#cabinet .wrap.split>div:first-child{display:block !important}
+ #cabinet .sec-title{margin-bottom:36px !important}
+ #cabinet .cab-photo{width:760px;max-width:100%;aspect-ratio:2/1;margin:0 0 48px}
+ #cabinet .wrap.split p:not(:has(.btn)){max-width:760px}
+ #cabinet .split p{text-align:left !important;hyphens:manual !important;-webkit-hyphens:manual !important}
+ #cabinet .facts{max-width:760px;margin-top:44px !important}
+}
