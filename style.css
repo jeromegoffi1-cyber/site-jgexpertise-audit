@@ -925,3 +925,8 @@ footer .cols p a{white-space:normal}
 @media (min-width:641px){.cab-suite{padding-top:34px !important}}
 @media (max-width:640px){.pagehead:has(+ .cab-suite) p{font-size:16.5px !important}}
 @media (min-width:1101px){.cab-suite .portrait{margin-top:-152px !important}.cab-suite .split>.prose{overflow:hidden}}
+/* Cartes sur ordinateur : même largeur partout (un tiers), alignées à gauche, jamais centrées */
+@media (min-width:901px){
+ .domains.domains2{grid-template-columns:repeat(3,1fr) !important}
+ .domains:has(>.domain:nth-child(5):last-child)>.domain:nth-child(4){grid-column:1 / span 2 !important}
+}
