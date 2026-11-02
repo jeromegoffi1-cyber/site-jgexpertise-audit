@@ -907,3 +907,7 @@ h2[id]{scroll-margin-top:110px}
  .cab-suite .portrait{margin:0 0 8px !important}
  .cab-suite .portrait img{aspect-ratio:4/5 !important;object-position:center 22% !important}
 }
+/* Lignes Martinique de l'accueil : même police, taille et couleur que le texte au-dessus */
+.hero .zone,.hero .zone span{font-size:20px !important;color:#1A1A1A !important;line-height:1.65 !important;font-weight:400 !important}
+@media (max-width:900px){.hero .zone,.hero .zone span{font-size:18px !important}}
+@media (max-width:640px){.hero .zone,.hero .zone span{font-size:16.5px !important;line-height:1.6 !important}}
