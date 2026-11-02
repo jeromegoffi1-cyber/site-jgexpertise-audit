@@ -920,3 +920,8 @@ footer .cols{grid-template-columns:1.5fr 1fr 1fr 1fr 0.8fr !important;gap:36px !
 footer .cols p a{white-space:normal}
 @media (max-width:1100px){footer .cols{grid-template-columns:repeat(4,1fr) !important}footer .cols>div:first-child{grid-column:1 / -1}}
 @media (max-width:640px){footer .cols{grid-template-columns:1fr 1fr !important;gap:26px 18px !important}footer .cols>div:first-child{grid-column:1 / -1}}
+/* Le cabinet : la ligne sous le titre a la même police que le texte ; texte sans grand vide ; photo à hauteur du titre sur ordinateur */
+.pagehead:has(+ .cab-suite) p{font-size:19px !important;color:#1A1A1A !important;line-height:1.65 !important}
+@media (min-width:641px){.cab-suite{padding-top:34px !important}}
+@media (max-width:640px){.pagehead:has(+ .cab-suite) p{font-size:16.5px !important}}
+@media (min-width:1101px){.cab-suite .portrait{margin-top:-152px !important}.cab-suite .split>.prose{overflow:hidden}}
