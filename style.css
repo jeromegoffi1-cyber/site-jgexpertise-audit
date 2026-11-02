@@ -911,3 +911,12 @@ h2[id]{scroll-margin-top:110px}
 .hero .zone,.hero .zone span{font-size:20px !important;color:#1A1A1A !important;line-height:1.65 !important;font-weight:400 !important}
 @media (max-width:900px){.hero .zone,.hero .zone span{font-size:18px !important}}
 @media (max-width:640px){.hero .zone,.hero .zone span{font-size:16.5px !important;line-height:1.6 !important}}
+/* Liens « Voir aussi » en bas des pages de services */
+.see-band{background:#fff;padding:8px 0 56px}
+.see-band .see{margin:0;padding-top:28px;border-top:none;font-size:16px;color:var(--grey)}
+.see-band .see a{white-space:nowrap;color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--sun)}
+/* Pied de page : liens vers toutes les pages */
+footer .cols{grid-template-columns:1.5fr 1fr 1fr 1fr 0.8fr !important;gap:36px !important}
+footer .cols p a{white-space:normal}
+@media (max-width:1100px){footer .cols{grid-template-columns:repeat(4,1fr) !important}footer .cols>div:first-child{grid-column:1 / -1}}
+@media (max-width:640px){footer .cols{grid-template-columns:1fr 1fr !important;gap:26px 18px !important}footer .cols>div:first-child{grid-column:1 / -1}}
