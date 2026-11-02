@@ -779,8 +779,7 @@ footer .ftag2{font-size:14px !important;margin-top:6px !important}
 @media (min-width:641px) and (max-width:900px){.hero .wrap{grid-template-columns:1.5fr 1fr !important;gap:36px !important;align-items:center}.hero .photo:not(.photo-m){display:block !important;padding:40px 0 !important}.hero .photo:not(.photo-m) img{max-width:100% !important}.hero .photo-m{display:none !important}.hero .sub{max-width:none !important}.hero h1{font-size:40px}}
 @media (min-width:641px) and (max-width:1100px){.sec-lead,.pagehead p,.mission .lead{max-width:none !important}}
 /* ===== revue visuelle 01/11 ===== */
-h1,h2,h3,.cap,.portrait p,.chapo,.sec-title{text-wrap:balance}
-p,li,.lead,.sec-lead{text-wrap:pretty}
+h1,h2,h3,.sec-title{text-wrap:balance}
 a[href^="mailto"]{white-space:nowrap}
 .twocol .list li:last-child{border-bottom:0}
 .mission .wrap>h2{align-items:flex-start !important}
@@ -829,3 +828,9 @@ body>footer{margin-top:auto}
 sup{font-size:.62em;line-height:0;vertical-align:.55em}
 @media (max-width:640px){.hero .photo-m img,.cab-suite .portrait img{width:100% !important;max-width:none !important;aspect-ratio:4/5;object-fit:cover;object-position:center 22%;height:auto}.hero .photo.photo-m{width:100%}}
 .dates3 b{display:block !important}.dates3 b:before{display:inline-block !important;vertical-align:middle;margin-right:10px}
+/* ===== relecture 3 ===== */
+.twocol{align-items:start}
+@media (min-width:641px){.domain .dhead{display:flex;flex-direction:column;justify-content:flex-end}}
+@media (min-width:641px) and (max-width:900px){.domains>.domain:last-child:nth-child(odd){width:auto !important;justify-self:stretch !important}}
+@media (min-width:861px){#cabinet .split{align-items:start !important}#cabinet .facts{margin-top:46px}}
+.post h3{text-wrap:wrap}
