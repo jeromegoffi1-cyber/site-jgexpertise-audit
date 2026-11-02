@@ -887,3 +887,13 @@ sup{font-size:.62em;line-height:0;vertical-align:.55em}
 @media (max-width:640px){.article .wrap>.pg-photo+*{margin-top:68px !important}}
 .cab-suite{padding-top:86px !important}
 @media (max-width:640px){.cab-suite{padding-top:58px !important}}
+/* Accueil sur tablette en portrait : colonne de texte étroite à côté de la photo, donc texte aligné à gauche, un peu plus d'air */
+@media (min-width:641px) and (max-width:900px){
+ .hero .sub{text-align:left !important;hyphens:manual !important;font-size:18px !important;line-height:1.65}
+ .hero .wrap{gap:48px !important;align-items:start !important}
+ .hero .photo:not(.photo-m){padding:96px 0 0 !important}
+ .hero .zone{margin-top:24px}
+}
+@media (min-width:641px) and (max-width:860px){#cabinet .split p:not(:has(.btn)){text-align:justify;hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:7 3 3}}
+@media (min-width:1101px){#cabinet .split{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) !important}#cabinet .split p:not(:has(.btn)){text-align:justify;hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:7 3 3}}
+.facts li span:not(.nw){text-wrap:pretty}
