@@ -897,3 +897,4 @@ sup{font-size:.62em;line-height:0;vertical-align:.55em}
 @media (min-width:641px) and (max-width:860px){#cabinet .split p:not(:has(.btn)){text-align:justify;hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:7 3 3}}
 @media (min-width:1101px){#cabinet .split{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) !important}#cabinet .split p:not(:has(.btn)){text-align:justify;hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:7 3 3}}
 .facts li span:not(.nw){text-wrap:pretty}
+h2[id]{scroll-margin-top:110px}
