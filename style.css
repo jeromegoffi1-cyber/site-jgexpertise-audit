@@ -773,3 +773,6 @@ footer .ftag2{font-size:14px !important;margin-top:6px !important}
 .pagehead .pg-photo{height:auto;aspect-ratio:3/2;max-width:760px;background-size:cover;background-position:center}
 .article .pg-photo{margin:22px 0 30px}
 .fe-photo{background-position:90% center}
+@media (min-width:641px){.sec-photo:not(.pg-photo){height:auto;aspect-ratio:2/1;background-position:center 40%}}
+@media (max-width:1240px){.nav{max-height:calc(100vh - 90px);max-height:calc(100dvh - 90px);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}}
+@media (max-width:1240px){.nav.open::after{display:none !important}.nav.open{box-shadow:0 0 0 100vmax rgba(26,26,26,.45) !important;clip-path:inset(0 -100vmax -100vmax -100vmax)}}
