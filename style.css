@@ -805,3 +805,4 @@ body>footer{margin-top:auto}
 .cta h2{font-family:'Source Serif',Georgia,serif !important;font-weight:700}
 .nw{white-space:nowrap}
 .grow{flex:1 0 auto}
+@media (min-width:641px){.cab-suite .split{display:block !important}.cab-suite .split::after{content:"";display:block;clear:both}.cab-suite .portrait{float:right;width:38%;max-width:400px;margin:4px 0 24px 44px}.cab-suite .portrait img{max-width:100% !important;width:100%}.cab-suite .prose p{max-width:none}}
