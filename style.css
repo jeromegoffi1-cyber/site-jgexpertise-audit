@@ -842,3 +842,4 @@ sup{font-size:.62em;line-height:0;vertical-align:.55em}
  .domains>.domain>.more{align-self:end}}}
 .art-suite:not(.mission) .wrap>h2.sec-title:before,.intro-cols h2.sec-title:before{content:none !important;display:none !important}
 .art-suite:not(.mission) .wrap>h2.sec-title,.intro-cols h2.sec-title{gap:0 !important}
+.pagehead p.lead-b{font-weight:600;color:var(--ink)}
