@@ -864,3 +864,19 @@ sup{font-size:.62em;line-height:0;vertical-align:.55em}
  .wrap:has(>.sec-photo:not(.pg-photo)):has(>.sec-lead){grid-template-rows:auto auto auto 1fr}
  .wrap:has(>.sec-lead)>.sec-photo:not(.pg-photo){grid-row:1 / span 4}
 }
+@media (min-width:1241px){.nav .dd{display:flex !important;align-items:center}.nav>a,.nav .dd>a{display:block !important;line-height:1.65 !important}}
+/* Alignement du texte : justifié avec coupure des mots seulement là où les lignes sont longues (tablette et ordinateur) ; tout le reste à gauche, bandeau contact centré */
+@media (min-width:641px){
+ .article .wrap>p:not(.see):not(.back),.art-suite .wrap p,.mission .lead,.pagehead .wrap>p:not(.kicker),.sec-lead,.hero .sub{
+  text-align:justify;hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:7 3 3}
+}
+@media (min-width:1101px){.prose p{text-align:justify;hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:7 3 3}}
+/* Articles avec photo : même en-tête que les autres pages (photo à droite), texte aligné dessous */
+@media (min-width:1101px){
+ .article .wrap:has(>.pg-photo){max-width:var(--max);display:grid;grid-template-columns:minmax(0,1fr) 440px;grid-template-rows:auto auto auto 1fr;column-gap:64px}
+ .article .wrap:has(>.pg-photo)>*{grid-column:1 / -1;max-width:820px}
+ .article .wrap:has(>.pg-photo)>.back,.article .wrap:has(>.pg-photo)>h1,.article .wrap:has(>.pg-photo)>.chapo{grid-column:1;max-width:none}
+ .article .wrap:has(>.pg-photo)>h1{font-size:52px}
+ .article .wrap:has(>.pg-photo)>.pg-photo{grid-column:2;grid-row:1 / span 4;max-width:none;width:440px;aspect-ratio:3/2;height:auto !important;margin:0 0 40px;align-self:start;display:block !important}
+}
+@media (max-width:1100px){.article .pg-photo{height:auto !important;aspect-ratio:3/2;background-size:cover;background-position:center}}
