@@ -843,3 +843,5 @@ sup{font-size:.62em;line-height:0;vertical-align:.55em}
 .art-suite:not(.mission) .wrap>h2.sec-title:before,.intro-cols h2.sec-title:before{content:none !important;display:none !important}
 .art-suite:not(.mission) .wrap>h2.sec-title,.intro-cols h2.sec-title{gap:0 !important}
 .pagehead p.lead-b{font-weight:600;color:var(--ink)}
+.article .see{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);font-size:16px;color:var(--grey)}
+.article .see a{white-space:nowrap;color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--sun)}
