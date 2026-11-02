@@ -856,9 +856,9 @@ sup{font-size:.62em;line-height:0;vertical-align:.55em}
 @media (min-width:1101px){.wrap:has(>.sec-photo:not(.pg-photo)):not(:has(>.sec-lead)){grid-template-rows:auto auto 1fr}
  .wrap:has(>.sec-photo:not(.pg-photo)):not(:has(>.sec-lead))>.sec-photo{grid-row:1 / span 3}}
 @media (min-width:1101px){
- #sante .wrap:has(>.sec-photo:not(.pg-photo)),.bg-ivory .wrap:has(>.sec-photo:not(.pg-photo)){grid-template-columns:440px minmax(0,1fr)}
- #sante .wrap>.kicker,#sante .wrap>.sec-title,#sante .wrap>.sec-lead,.bg-ivory .wrap:has(>.sec-photo)>.kicker,.bg-ivory .wrap:has(>.sec-photo)>.sec-title{grid-column:2}
- #sante .wrap>.sec-photo,.bg-ivory .wrap>.sec-photo:not(.pg-photo){grid-column:1}
+ #expertise .wrap:has(>.sec-photo:not(.pg-photo)),#audit .wrap:has(>.sec-photo:not(.pg-photo)){grid-template-columns:440px minmax(0,1fr)}
+ #expertise .wrap>.kicker,#expertise .wrap>.sec-title,#expertise .wrap>.sec-lead,#audit .wrap>.kicker,#audit .wrap>.sec-title,#audit .wrap>.sec-lead{grid-column:2}
+ #expertise .wrap>.sec-photo,#audit .wrap>.sec-photo{grid-column:1}
 }
 @media (min-width:1101px){
  .wrap:has(>.sec-photo:not(.pg-photo)):has(>.sec-lead){grid-template-rows:auto auto auto 1fr}
