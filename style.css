@@ -771,3 +771,4 @@ footer .ftag2{font-size:14px !important;margin-top:6px !important}
 .pagehead .pg-photo{margin:28px 0 0}
 @media (max-width:640px){.pagehead .pg-photo{margin:20px 0 0}}
 .pagehead .pg-photo{height:auto;aspect-ratio:3/2;max-width:760px;background-size:cover;background-position:center}
+.article .pg-photo{margin:22px 0 30px}
