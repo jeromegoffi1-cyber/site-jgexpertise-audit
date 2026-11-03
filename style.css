@@ -960,3 +960,23 @@ footer .cols p a{white-space:normal}
 @media (min-width:1101px){.wrap:has(>.news)>.sec-photo{aspect-ratio:3/2 !important}}
 /* Accueil : toutes les photos de section en entier (format d'origine 3:2), ordinateur et tablette */
 @media (min-width:641px){section .wrap:has(>.sec-photo:not(.pg-photo))>.sec-photo.sec-photo:not(.pg-photo){aspect-ratio:3/2 !important;height:auto !important}}
+/* Article avec photo (seuils) sur ordinateur : titre, photo entière dessous à gauche, chapô, puis le texte */
+@media (min-width:1101px){
+ .article .wrap:has(>.pg-photo){display:flex !important;flex-direction:column}
+ .article .wrap:has(>.pg-photo)>*{order:5}
+ .article .wrap:has(>.pg-photo)>.back{order:1;align-self:flex-start}
+ .article .wrap:has(>.pg-photo)>h1{order:2}
+ .article .wrap:has(>.pg-photo)>.pg-photo{order:3;width:760px !important;max-width:100% !important;aspect-ratio:3/2 !important;margin:20px 0 40px !important}
+ .article .wrap:has(>.pg-photo)>.chapo{order:4;max-width:760px !important}
+}
+/* Encadrés « À lire » : plus d'espace avec les blocs au-dessus */
+.linkcard{margin-top:56px !important}
+@media (max-width:640px){.linkcard{margin-top:36px !important}}
+/* Page Actualités : on garde la mise en page d'avant (photo à droite du titre) */
+@media (min-width:1101px){
+ .pagehead:has(.pg-photo[aria-label*="journal"]) .wrap{grid-template-columns:minmax(0,1fr) 440px !important;column-gap:64px !important}
+ .pagehead:has(.pg-photo[aria-label*="journal"]) .wrap>*{grid-column:1 !important;grid-row:auto}
+ .pagehead:has(.pg-photo[aria-label*="journal"]) .wrap>h1{grid-row:auto}
+ .pagehead:has(.pg-photo[aria-label*="journal"]) .wrap>p:not(.kicker){grid-row:auto;max-width:none !important}
+ .pagehead:has(.pg-photo[aria-label*="journal"]) .pg-photo{grid-column:2 !important;grid-row:1 / span 6 !important;width:100% !important;aspect-ratio:3/2 !important;margin:0 !important}
+}
