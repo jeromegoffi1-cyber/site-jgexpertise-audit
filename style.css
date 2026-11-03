@@ -989,3 +989,27 @@ footer .cols p a{white-space:normal}
  #cabinet .wrap.split p:not(:has(.btn)),#cabinet .facts{max-width:none !important}
 }
 @media (min-width:1101px){#cabinet .wrap.split>div:first-child>.cab-photo{grid-column:2 !important;grid-row:1 / span 5 !important}}
+/* Titres des articles : même largeur que le texte */
+.art-suite .wrap h2.sec-title{max-width:820px !important}
+/* Accueil, Actualités sur ordinateur : petite photo à droite, texte d'introduction, comme les autres sections */
+@media (min-width:1101px){
+ .wrap:has(>.news):has(>.sec-photo){grid-template-columns:minmax(0,1fr) 440px !important;column-gap:64px !important;grid-template-rows:auto auto auto 1fr !important}
+ .wrap:has(>.news)>.kicker,.wrap:has(>.news)>.sec-title,.wrap:has(>.news)>.sec-lead{grid-column:1 !important}
+ .wrap:has(>.news)>.news,.wrap:has(>.news)>p:last-child{grid-column:1 / -1 !important}
+ section .wrap:has(>.news)>.sec-photo.sec-photo{grid-column:2 !important;grid-row:1 / span 4 !important;justify-self:stretch !important;width:100% !important;aspect-ratio:3/2 !important;margin:0 0 34px !important}
+}
+/* Photo à gauche : Actualités de l'accueil et page Actualités (ordinateur) */
+@media (min-width:1101px){
+ .wrap:has(>.news):has(>.sec-photo){grid-template-columns:440px minmax(0,1fr) !important}
+ .wrap:has(>.news)>.kicker,.wrap:has(>.news)>.sec-title,.wrap:has(>.news)>.sec-lead{grid-column:2 !important}
+ section .wrap:has(>.news)>.sec-photo.sec-photo{grid-column:1 !important}
+ .pagehead:has(.pg-photo[aria-label*="journal"]) .wrap{grid-template-columns:440px minmax(0,1fr) !important}
+ .pagehead:has(.pg-photo[aria-label*="journal"]) .wrap>*{grid-column:2 !important}
+ .pagehead:has(.pg-photo[aria-label*="journal"]) .pg-photo{grid-column:1 !important}
+}
+@media (min-width:1101px){
+ .pagehead:has(.pg-photo[aria-label*="journal"]) .wrap>.back{grid-column:1 / -1 !important;grid-row:1 !important;justify-self:start}
+ .pagehead:has(.pg-photo[aria-label*="journal"]) .wrap>h1{grid-row:2 !important}
+ .pagehead:has(.pg-photo[aria-label*="journal"]) .wrap>p:not(.kicker){grid-row:3 !important}
+ .pagehead:has(.pg-photo[aria-label*="journal"]) .pg-photo{grid-row:2 / span 5 !important}
+}
