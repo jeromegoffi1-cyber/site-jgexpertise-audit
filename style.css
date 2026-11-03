@@ -1041,3 +1041,9 @@ footer .cols p a{white-space:normal}
 /* Blocs « La mission » / « Pour vous » : même hauteur côte à côte, partout */
 .twocol{align-items:stretch !important}
 .twocol>.col{height:auto !important;align-self:stretch !important}
+/* Le cabinet (tablette et ordinateur) : plus d'air sous le titre, la ligne de présentation suit le texte de près */
+@media (min-width:641px){
+ .pagehead:has(+ .cab-suite) h1{margin-bottom:30px !important}
+ .cab-suite{padding-top:8px !important}
+}
+@media (min-width:1101px){.cab-suite .portrait{margin-top:-139px !important}}
