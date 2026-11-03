@@ -1017,3 +1017,24 @@ footer .cols p a{white-space:normal}
 @media (min-width:641px){.linkcard{max-width:calc(50% - 14px) !important;width:auto !important}}
 @media (min-width:641px){.linkcard{max-width:100% !important;width:fit-content !important;min-width:calc(50% - 14px)}.linkcard .lc-t{white-space:nowrap}}
 @media (min-width:641px) and (max-width:1100px){.linkcard{width:520px !important;min-width:0}}
+/* Sous-pages et article des seuils sur ordinateur : texte à gauche, photo à droite, colonnes équilibrées */
+@media (min-width:1101px){
+ .pagehead:has(.pg-photo):not(:has(.pg-photo[aria-label*="journal"])) .wrap{grid-template-columns:minmax(0,1fr) 520px !important;column-gap:64px !important;align-items:start}
+ .pagehead:has(.pg-photo):not(:has(.pg-photo[aria-label*="journal"])) .wrap>*{grid-column:1 !important}
+ .pagehead:has(.pg-photo):not(:has(.pg-photo[aria-label*="journal"])) .wrap>.back{grid-row:1 !important}
+ .pagehead:has(.pg-photo):not(:has(.pg-photo[aria-label*="journal"])) .wrap>h1{grid-row:2 !important}
+ .pagehead:has(.pg-photo):not(:has(.pg-photo[aria-label*="journal"])) .wrap>p:not(.kicker){grid-row:3 !important;max-width:none !important}
+ .pagehead:has(.pg-photo):not(:has(.pg-photo[aria-label*="journal"])) .wrap>.pg-photo{grid-column:2 !important;grid-row:2 / span 4 !important;width:100% !important;aspect-ratio:3/2 !important;margin:8px 0 0 !important}
+ .article .wrap:has(>.pg-photo){display:grid !important;grid-template-columns:minmax(0,1fr) 520px !important;column-gap:64px !important;grid-template-rows:auto auto auto 1fr !important}
+ .article .wrap:has(>.pg-photo)>*{grid-column:1 / -1 !important;order:0 !important}
+ .article .wrap:has(>.pg-photo)>.back{grid-column:1 / -1 !important;grid-row:1 !important}
+ .article .wrap:has(>.pg-photo)>h1{grid-column:1 !important;grid-row:2 !important}
+ .article .wrap:has(>.pg-photo)>.chapo{grid-column:1 !important;grid-row:3 !important;max-width:none !important}
+ .article .wrap:has(>.pg-photo)>.pg-photo{grid-column:2 !important;grid-row:2 / span 3 !important;width:100% !important;aspect-ratio:3/2 !important;margin:8px 0 0 !important}
+ .article .wrap:has(>.pg-photo)>.pg-photo+*{margin-top:72px !important}
+}
+@media (min-width:1101px){
+ .pagehead:has(.pg-photo):not(:has(.pg-photo[aria-label*="journal"])) .wrap>p:not(.kicker),.article .wrap:has(>.pg-photo)>.chapo{text-align:left !important;hyphens:manual !important;-webkit-hyphens:manual !important}
+}
+/* Encadrés « À lire » centrés (tablette et ordinateur) */
+@media (min-width:641px){.linkcard{margin-left:auto !important;margin-right:auto !important}}
