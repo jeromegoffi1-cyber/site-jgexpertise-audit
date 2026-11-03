@@ -980,3 +980,12 @@ footer .cols p a{white-space:normal}
  .pagehead:has(.pg-photo[aria-label*="journal"]) .wrap>p:not(.kicker){grid-row:auto;max-width:none !important}
  .pagehead:has(.pg-photo[aria-label*="journal"]) .pg-photo{grid-column:2 !important;grid-row:1 / span 6 !important;width:100% !important;aspect-ratio:3/2 !important;margin:0 !important}
 }
+/* Accueil, Le cabinet sur ordinateur : petite photo à droite du texte, comme les sections au-dessus */
+@media (min-width:1101px){
+ #cabinet .wrap.split{display:grid !important;grid-template-columns:minmax(0,1fr) 440px !important;column-gap:64px !important;row-gap:0 !important;align-items:start}
+ #cabinet .wrap.split>div:first-child{display:contents !important}
+ #cabinet .wrap.split>div:first-child>*,#cabinet .facts{grid-column:1 !important}
+ #cabinet .cab-photo{grid-column:2 !important;grid-row:1 / span 4 !important;width:100% !important;aspect-ratio:3/2 !important;margin:0 !important}
+ #cabinet .wrap.split p:not(:has(.btn)),#cabinet .facts{max-width:none !important}
+}
+@media (min-width:1101px){#cabinet .wrap.split>div:first-child>.cab-photo{grid-column:2 !important;grid-row:1 / span 5 !important}}
