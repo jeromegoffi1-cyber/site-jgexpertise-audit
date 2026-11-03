@@ -1013,3 +1013,7 @@ footer .cols p a{white-space:normal}
  .pagehead:has(.pg-photo[aria-label*="journal"]) .wrap>p:not(.kicker){grid-row:3 !important}
  .pagehead:has(.pg-photo[aria-label*="journal"]) .pg-photo{grid-row:2 / span 5 !important}
 }
+/* Encadrés « À lire » : largeur d'un bloc, pas toute la page (tablette et ordinateur) */
+@media (min-width:641px){.linkcard{max-width:calc(50% - 14px) !important;width:auto !important}}
+@media (min-width:641px){.linkcard{max-width:100% !important;width:fit-content !important;min-width:calc(50% - 14px)}.linkcard .lc-t{white-space:nowrap}}
+@media (min-width:641px) and (max-width:1100px){.linkcard{width:520px !important;min-width:0}}
