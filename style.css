@@ -1038,3 +1038,6 @@ footer .cols p a{white-space:normal}
 }
 /* Encadrés « À lire » centrés (tablette et ordinateur) */
 @media (min-width:641px){.linkcard{margin-left:auto !important;margin-right:auto !important}}
+/* Blocs « La mission » / « Pour vous » : même hauteur côte à côte, partout */
+.twocol{align-items:stretch !important}
+.twocol>.col{height:auto !important;align-self:stretch !important}
