@@ -947,3 +947,16 @@ footer .cols p a{white-space:normal}
  #cabinet .split p{text-align:left !important;hyphens:manual !important;-webkit-hyphens:manual !important}
  #cabinet .facts{max-width:760px;margin-top:44px !important}
 }
+/* Sous-pages sur ordinateur : photo entière sous le titre, alignée à gauche, 760 de large, puis l'introduction */
+@media (min-width:1101px){
+ .pagehead:has(.pg-photo) .wrap{display:grid;grid-template-columns:minmax(0,1fr) !important;column-gap:0}
+ .pagehead:has(.pg-photo) .wrap>*{grid-column:1 !important}
+ .pagehead:has(.pg-photo) .wrap>h1{grid-row:2}
+ .pagehead:has(.pg-photo) .pg-photo{grid-row:3 !important;width:760px !important;max-width:100% !important;aspect-ratio:3/2 !important;background-position:center !important;margin:20px 0 40px !important}
+ .pagehead:has(.pg-photo) .wrap>p:not(.kicker){grid-row:4;max-width:760px !important}
+}
+/* Accueil : photos Le cabinet et Actualités en entier (format d'origine) */
+#cabinet .cab-photo{aspect-ratio:3/2 !important}
+@media (min-width:1101px){.wrap:has(>.news)>.sec-photo{aspect-ratio:3/2 !important}}
+/* Accueil : toutes les photos de section en entier (format d'origine 3:2), ordinateur et tablette */
+@media (min-width:641px){section .wrap:has(>.sec-photo:not(.pg-photo))>.sec-photo.sec-photo:not(.pg-photo){aspect-ratio:3/2 !important;height:auto !important}}
