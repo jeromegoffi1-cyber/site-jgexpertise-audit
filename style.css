@@ -1047,3 +1047,7 @@ footer .cols p a{white-space:normal}
  .cab-suite{padding-top:8px !important}
 }
 @media (min-width:1101px){.cab-suite .portrait{margin-top:-139px !important}}
+/* Carte seule sur sa ligne : jamais centrée, alignée à gauche (tous formats) */
+.domains>.domain:last-child:nth-child(odd){justify-self:start !important}
+@media (min-width:641px) and (max-width:900px){.domains>.domain:last-child:nth-child(odd){grid-column:1 !important;width:auto !important}}
+@media (min-width:641px) and (max-width:900px){section .wrap .domains>.domain.domain:last-child:nth-child(odd){width:100% !important;max-width:none !important}}
