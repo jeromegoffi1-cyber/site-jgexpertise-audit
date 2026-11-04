@@ -24,7 +24,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Retraite et prévoyance : expert-comptable des professions de santé en Martinique", "description": "Retraite et prévoyance des professionnels de santé libéraux en Martinique : relevés, projection, contrats et épargne, sans vente de contrat.", "url": "https://www.jgexpertise-audit.fr/sante-retraite-prevoyance.html", "areaServed": ["Martinique", "Guadeloupe", "Guyane"], "serviceType": "Expertise comptable", "provider": {"@type": "AccountingService", "@id": "https://www.jgexpertise-audit.fr/#cabinet", "name": "JG Expertise & Audit", "url": "https://www.jgexpertise-audit.fr/"}}</script>
 <meta property="og:site_name" content="JG Expertise &amp; Audit">
 <link rel="preload" href="fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=1793751641">
+<link rel="stylesheet" href="style.css?v=1793753787">
 </head>
 <body>
 
@@ -204,7 +204,8 @@ fit();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);win
     });
     var wt=document.createElement('span');wt.className='wt';while(h.firstChild)wt.appendChild(h.firstChild);h.appendChild(wt);
     if(Math.abs(h.getBoundingClientRect().height-h0)>2){h.innerHTML=avant;return false;}
-    [].forEach.call(h.querySelectorAll('.w>span'),function(x,k){x.style.transitionDelay='calc(var(--rv-d,0ms) + '+(k*55)+'ms)';});return true;}
+    h._orig=avant;
+    [].forEach.call(h.querySelectorAll('.w>span'),function(x,k){x.style.transitionDelay='calc(var(--rv-d,0ms) + '+(k*45)+'ms)';});return true;}
   function prep(el,d){
     if(el.matches(IMG)){el.classList.add('rv-img');}
     else if(el.matches('h1,h2')&&mots(el)){el.classList.add('rv-t');}
@@ -218,15 +219,17 @@ fit();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);win
   [].forEach.call(zones,function(w){
     [].forEach.call(w.children,function(el){
       if(el.matches('script,style,br')||el.dataset.rvp)return;el.dataset.rvp='1';
-      if(el.matches(GRILLES)){[].forEach.call(el.children,function(c,i){prep(c,(i%3)*140);vus.push(c);});}
+      if(el.matches(GRILLES)){[].forEach.call(el.children,function(c,i){prep(c,(i%3)*115);vus.push(c);});}
       else{prep(el,0);vus.push(el);}
     });
   });
+  function verif(){[].forEach.call(document.querySelectorAll('[data-split]'),function(h){if(!h._orig)return;var cur=h.innerHTML,a=h.getBoundingClientRect().height;h.innerHTML=h._orig;var b=h.getBoundingClientRect().height;if(Math.abs(a-b)>2){h._orig=null;h.classList.remove('rv-t');if(!h.classList.contains('in')){h.classList.add('rv');}}else{h.innerHTML=cur;}});}
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(verif);window.addEventListener('load',verif);
   function fin(el){el.classList.add('in');setTimeout(function(){el.classList.remove('rv','rv-k','rv-img','rv-t','in');el.style.removeProperty('--rv-d');},3200);}
   /* haut de page : arrivée par étapes */
   var tete=document.querySelector('.hero .txt, .pagehead .wrap');
   if(tete){var items=[].slice.call(tete.children);var ph=document.querySelector('.hero .wrap > .photo, .pagehead ~ .cab-suite .portrait');
-    items.forEach(function(el,i){prep(el,120+i*130);});
+    items.forEach(function(el,i){prep(el,100+i*110);});
     if(ph)prep(ph,200);
     requestAnimationFrame(function(){requestAnimationFrame(function(){items.forEach(fin);if(ph)fin(ph);});});}
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){fin(e.target);io.unobserve(e.target);}});},{rootMargin:'0px 0px -12% 0px',threshold:0.1});
