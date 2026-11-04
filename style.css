@@ -1091,3 +1091,6 @@ html.mo:not(.mo-ok) .hero .txt>*,html.mo:not(.mo-ok) .hero .wrap>.photo,html.mo:
 html.rv-init .rv,html.rv-init .rv-img,html.rv-init .rv-t .w>span{transition:none !important}
 /* Carte seule en fin de grille : même largeur que les autres, alignée à gauche, tous formats (2026-11-03) */
 .domains>.domain:last-child:nth-child(odd){justify-self:stretch !important;width:auto !important;max-width:none !important}
+/* Menu téléphone/tablette : lien « Vue d'ensemble » en tête de chaque rubrique (2026-11-03) */
+.dd .menu a.menu-all{display:none}
+.nav.open .dd .menu a.menu-all{display:block;font-weight:600 !important;color:#1A1A1A !important}
