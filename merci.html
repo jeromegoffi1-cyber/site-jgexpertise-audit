@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="JG Expertise &amp; Audit">
 <link rel="preload" href="fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/libre-caslon-text-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=1793755196">
+<link rel="stylesheet" href="style.css?v=1793756064">
 <script>try{if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)&&'IntersectionObserver' in window){document.documentElement.classList.add('mo');setTimeout(function(){document.documentElement.classList.add('mo-ok')},3000);}}catch(e){}
 try{if(!sessionStorage.getItem('jgi')&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){var d=document.documentElement;d.classList.add('intro');sessionStorage.setItem('jgi','1');setTimeout(function(){d.classList.add('intro-out')},1250);setTimeout(function(){d.classList.remove('intro','intro-out')},1900);}}catch(e){}</script>
 </head>
@@ -187,7 +187,14 @@ fit();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);win
   });
   function verif(){[].forEach.call(document.querySelectorAll('[data-split]'),function(h){if(!h._orig)return;var cur=h.innerHTML,a=h.getBoundingClientRect().height;h.innerHTML=h._orig;var b=h.getBoundingClientRect().height;if(Math.abs(a-b)>2){h._orig=null;h.classList.remove('rv-t');if(!h.classList.contains('in')){h.classList.add('rv');}}else{h.innerHTML=cur;}});}
   if(document.fonts&&document.fonts.ready)document.fonts.ready.then(verif);window.addEventListener('load',verif);
-  function fin(el){el.classList.add('in');setTimeout(function(){el.classList.remove('rv','rv-f','rv-img','rv-t','in');el.style.removeProperty('--rv-d');},4600);}
+  function charge(el,cb){var fait=false;function go(){if(!fait){fait=true;cb();}}setTimeout(go,2500);
+    var im=el.tagName==='IMG'?el:el.querySelector('img');
+    if(im){if(im.complete&&im.naturalWidth){go();}else{im.addEventListener('load',go);im.addEventListener('error',go);}return;}
+    var m=/url\(["']?([^"')]+)/.exec(getComputedStyle(el).backgroundImage||'');
+    if(m){var i=new Image();i.onload=i.onerror=go;i.src=m[1];if(i.complete)go();return;}
+    go();}
+  function fin(el){if(el.classList.contains('rv-img')&&!el._ok){if(!el._ch){el._ch=1;charge(el,function(){el._ok=1;fin(el);});}return;}
+    el.classList.add('in');setTimeout(function(){el.classList.remove('rv','rv-f','rv-img','rv-t','in');el.style.removeProperty('--rv-d');},4600);}
   /* haut de page : arrivée par étapes */
   var art=document.querySelector('body > main.article .wrap');
   var tete=document.querySelector('.hero .txt, .pagehead .wrap')||art;
