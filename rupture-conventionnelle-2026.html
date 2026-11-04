@@ -24,7 +24,7 @@
 <meta property="og:site_name" content="JG Expertise &amp; Audit">
 <link rel="preload" href="fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/libre-caslon-text-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css?v=1793759310">
+<link rel="stylesheet" href="style.css?v=1793760395">
 <script>try{if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)&&'IntersectionObserver' in window){document.documentElement.classList.add('mo');setTimeout(function(){document.documentElement.classList.add('mo-ok')},3000);}}catch(e){}
 try{if(!sessionStorage.getItem('jgi')&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){var d=document.documentElement;d.classList.add('intro');sessionStorage.setItem('jgi','1');setTimeout(function(){d.classList.add('intro-out')},1250);setTimeout(function(){d.classList.remove('intro','intro-out')},1900);}}catch(e){}</script>
 </head>
@@ -207,7 +207,7 @@ fit();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);win
   var vus=[];
   /* dans les sections : seuls les grands titres et les photos s'animent, le reste ne bouge pas */
   [].forEach.call(zones,function(w){
-    [].forEach.call(w.querySelectorAll(':scope > h2.sec-title, :scope > .sec-photo, :scope > .photo, :scope > .portrait, :scope > .cab-photo'),function(el){
+    [].forEach.call(w.querySelectorAll('h2.sec-title, .sec-photo, .photo, .portrait, .cab-photo'),function(el){
       if(el.dataset.rvp)return;el.dataset.rvp='1';prep(el,0);vus.push(el);
     });
   });
@@ -220,6 +220,7 @@ fit();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);win
     if(m){var i=new Image();i.onload=i.onerror=go;i.src=m[1];if(i.complete)go();return;}
     go();}
   function fin(el){if(el.classList.contains('rv-img')&&!el._ok){if(!el._ch){el._ch=1;charge(el,function(){el._ok=1;fin(el);});}return;}
+    if(!el._f){el._f=1;requestAnimationFrame(function(){requestAnimationFrame(function(){fin(el);});});return;}
     el.classList.add('in');setTimeout(function(){el.classList.remove('rv','rv-f','rv-img','rv-t','in');el.style.removeProperty('--rv-d');},4600);}
   /* haut de page : arrivée par étapes */
   var art=document.querySelector('body > main.article .wrap');
@@ -227,6 +228,7 @@ fit();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(fit);win
   if(tete){var items=[].slice.call(tete.children);if(tete===art){var k1=items.findIndex(function(e){return e.matches('h1');});items=items.slice(0,k1+2);}var ph=document.querySelector('.hero .wrap > .photo, .pagehead ~ .cab-suite .portrait');
     var ex=d.classList.contains('intro')?1350:0;
     items.forEach(function(el,i){prep(el,ex+80+i*90);});
+    if(!ph&&tete===art){ph=art.querySelector(':scope > .sec-photo');if(ph&&items.indexOf(ph)>=0)ph=null;}
     if(ph)prep(ph,ex+200);
     }
   void d.offsetHeight;d.classList.remove('rv-init');d.classList.add('mo-ok');
