@@ -1089,3 +1089,5 @@ html.intro-out body::after,html.intro-out::after,html.intro-out::before{animatio
 @keyframes jgOut{from{opacity:1;transform:none}to{opacity:0;transform:translateY(-12px)}}
 html.mo:not(.mo-ok) .hero .txt>*,html.mo:not(.mo-ok) .hero .wrap>.photo,html.mo:not(.mo-ok) .pagehead .wrap>*,html.mo:not(.mo-ok) .cab-suite .portrait,html.mo:not(.mo-ok) main.article .wrap>:nth-child(-n+4){opacity:0}
 html.rv-init .rv,html.rv-init .rv-img,html.rv-init .rv-t .w>span{transition:none !important}
+/* Carte seule en fin de grille : même largeur que les autres, alignée à gauche, tous formats (2026-11-03) */
+.domains>.domain:last-child:nth-child(odd){justify-self:stretch !important;width:auto !important;max-width:none !important}
